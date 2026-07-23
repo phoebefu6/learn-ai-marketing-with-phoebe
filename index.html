@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>learn AI + marketing with phoebe - a two-track course for marketers who embrace AI</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(194,24,91,.14); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#FBE9F1); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .rail { margin-top: 1.4rem; border: 1px solid var(--hairline); border-left: 4px solid var(--amber); border-radius: var(--radius); background: var(--amber-50); padding: 1rem 1.2rem; font-size: .9rem; }
+  .rail b { color: var(--amber-ink); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe</div>
+    <h1>Two tracks for marketers who <span class="accent">embrace AI</span></h1>
+    <p class="sub">A leader track that teaches CMOs and marketing managers to steer AI across the funnel without a line of code - and a builder track where you build one real launch campaign end to end for a sample product, Cadence, using AI at every step: positioning, content, SEO, ads, email, social, and creative. Multi-channel, B2B and B2C, with the brand-safety and disclosure guardrails that keep you credible.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="2">2</b><span>tracks</span></div>
+      <div class="stat"><b data-count="16">16</b><span>sessions</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+      <div class="stat"><b data-count="1">1</b><span>campaign, built end to end</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The leader track 🤝 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for CMOs, heads of marketing &amp; managers · 6 x 45 min · no code, ever</span></h2>
+      <p class="plede">Thinking mode: where AI actually pays off across the funnel, how to protect the brand, build the team, and measure what matters - each session ends with the questions to ask your team and your agencies.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/a1-ai-first-marketing.html" style="--diff:#34D399">
+        <span class="cicon">🚀</span>
+        <span class="cnum">Leader 1 · easy</span>
+        <h3>The AI-first marketing team</h3>
+        <p>Why now, the real landscape beyond the hype, and the map of where AI creates value across the whole funnel.</p>
+        <span class="meta"><span class="pill amber">▶ Leaders start here</span></span>
+      </a>
+      <a class="course-card" href="courses/a2-use-case-risk-map.html" style="--diff:#34D399">
+        <span class="cicon">🎯</span>
+        <span class="cnum">Leader 2 · easy</span>
+        <h3>The use-case + risk map</h3>
+        <p>Score AI bets across content, SEO, ads, email, and creative - weighed against brand-safety and disclosure risk.</p>
+        <span class="meta"><span class="pill light">Prioritization exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a3-brand-trust-disclosure.html" style="--diff:#FBBF24">
+        <span class="cicon">🛡️</span>
+        <span class="cnum">Leader 3 · medium</span>
+        <h3>Brand, trust &amp; disclosure</h3>
+        <p>Voice consistency, false-claim risk, FTC/ASA disclosure of AI and endorsements, IP and deepfakes, and privacy.</p>
+        <span class="meta"><span class="pill light">Brand-safety checklist</span></span>
+      </a>
+      <a class="course-card" href="courses/a4-ai-ready-marketing-team.html" style="--diff:#FBBF24">
+        <span class="cicon">👥</span>
+        <span class="cnum">Leader 4 · medium</span>
+        <h3>The AI-ready marketing team</h3>
+        <p>New roles, the skills to grow, the human-in-loop review that protects quality, and a sane martech stack.</p>
+        <span class="meta"><span class="pill light">Skills-map exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a5-measuring-what-matters.html" style="--diff:#FB923C">
+        <span class="cicon">📊</span>
+        <span class="cnum">Leader 5 · deciding</span>
+        <h3>Measuring what matters</h3>
+        <p>ROI, efficiency vs effectiveness, avoiding content-sludge, protecting brand equity, and the buy-vs-build call.</p>
+        <span class="meta"><span class="pill light">Business-case exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a6-strategy-roadmap.html" style="--diff:#FB923C">
+        <span class="cicon">🧭</span>
+        <span class="cnum">Leader 6 · deciding</span>
+        <h3>Strategy &amp; the 24-month roadmap</h3>
+        <p>The agentic-marketing future, what to sequence when, and the CMO narrative that gets an AI program funded.</p>
+        <span class="meta"><span class="pill light">Roadmap exercise</span></span>
+      </a>
+    </div>
+
+    <div class="paths">
+      <h2>The builder track 🛠️ <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for marketers &amp; practitioners · 10 x 45 min · ChatGPT / Claude, no code</span></h2>
+      <p class="plede">One growing campaign: you launch Cadence, a sample AI note-taker with B2C self-serve and B2B team motions. Every session adds a channel - positioning, content, SEO, ads, email, social, creative, measurement - built with AI and kept on-brand by you.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/b1-ai-foundations-marketers.html" style="--diff:#34D399">
+        <span class="cicon">🤖</span>
+        <span class="cnum">Builder 1 · easy</span>
+        <h3>AI foundations for marketers</h3>
+        <p>What LLMs do well and badly for marketing, the tool landscape, and the brand + privacy rails that keep you safe.</p>
+        <span class="meta"><span class="pill amber">▶ Builders start here</span></span>
+      </a>
+      <a class="course-card" href="courses/b2-positioning-messaging.html" style="--diff:#FBBF24">
+        <span class="cicon">🎯</span>
+        <span class="cnum">Builder 2 · medium</span>
+        <h3>Positioning &amp; messaging</h3>
+        <p>Nail Cadence's ICP and value prop - with a live simulator that shows message-market fit climb as you sharpen it.</p>
+        <span class="meta"><span class="pill light">★ interactive: marketing-live</span></span>
+      </a>
+      <a class="course-card" href="courses/b3-content-engine.html" style="--diff:#FBBF24">
+        <span class="cicon">✍️</span>
+        <span class="cnum">Builder 3 · medium</span>
+        <h3>The content engine</h3>
+        <p>Briefs, brand voice, and long-form drafts at speed - and how to strip the AI-tells that get content ignored.</p>
+        <span class="meta"><span class="pill light">Cadence blog + pillar</span></span>
+      </a>
+      <a class="course-card" href="courses/b4-seo-ai-search.html" style="--diff:#FB923C">
+        <span class="cicon">🔍</span>
+        <span class="cnum">Builder 4 · hands-on</span>
+        <h3>SEO &amp; AI-search (GEO)</h3>
+        <p>Topic clusters, on-page optimization, and getting cited by AI answer engines, not just ranked on the tenth link.</p>
+        <span class="meta"><span class="pill light">Cadence topic map</span></span>
+      </a>
+      <a class="course-card" href="courses/b5-paid-ads-creative.html" style="--diff:#FBBF24">
+        <span class="cicon">📣</span>
+        <span class="cnum">Builder 5 · medium</span>
+        <h3>Paid ads &amp; creative</h3>
+        <p>Ad copy variants, creative concepts, and audience drafts - structured for a clean A/B test, not a guessing game.</p>
+        <span class="meta"><span class="pill light">Cadence ad set</span></span>
+      </a>
+      <a class="course-card" href="courses/b6-email-lifecycle.html" style="--diff:#FBBF24">
+        <span class="cicon">✉️</span>
+        <span class="cnum">Builder 6 · medium</span>
+        <h3>Email &amp; lifecycle</h3>
+        <p>Onboarding and nurture sequences, segmentation, and subject-line testing - personalized without getting creepy.</p>
+        <span class="meta"><span class="pill light">Cadence welcome flow</span></span>
+      </a>
+      <a class="course-card" href="courses/b7-social-short-form.html" style="--diff:#34D399">
+        <span class="cicon">📱</span>
+        <span class="cnum">Builder 7 · easy</span>
+        <h3>Social &amp; short-form</h3>
+        <p>Turn one asset into a week of platform-native posts, a content calendar, and captions that sound human.</p>
+        <span class="meta"><span class="pill light">Cadence content week</span></span>
+      </a>
+      <a class="course-card" href="courses/b8-creative-visuals.html" style="--diff:#FB923C">
+        <span class="cicon">🎨</span>
+        <span class="cnum">Builder 8 · hands-on</span>
+        <h3>Creative &amp; visuals with AI</h3>
+        <p>Generate on-brand images for ads and social - and the IP, likeness, and rights cautions that keep you out of trouble.</p>
+        <span class="meta"><span class="pill light">Cadence visual kit</span></span>
+      </a>
+      <a class="course-card" href="courses/b9-analytics-optimization.html" style="--diff:#FB923C">
+        <span class="cicon">📈</span>
+        <span class="cnum">Builder 9 · hands-on</span>
+        <h3>Analytics &amp; optimization</h3>
+        <p>Read the campaign's results with an AI co-pilot and design the next experiment - the human still owns the spend call.</p>
+        <span class="meta"><span class="pill light">Cadence readout</span></span>
+      </a>
+      <a class="course-card" href="courses/b10-governance-brand-safety.html" style="--diff:#F87171">
+        <span class="cicon">🔒</span>
+        <span class="cnum">Builder 10 · hardest</span>
+        <h3>Governance, brand safety &amp; scaling</h3>
+        <p>Disclosure, brand guardrails at scale, prompt injection, data privacy, and the launch checklist before you ship.</p>
+        <span class="meta"><span class="pill light">Launch checklist</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easy - everyone</span>
+      <span><i style="background:#FBBF24"></i>medium</span>
+      <span><i style="background:#FB923C"></i>hands-on / deciding</span>
+      <span><i style="background:#F87171"></i>hardest</span>
+    </div>
+
+    <div class="rail">
+      <b>The one rule this whole course runs on:</b> AI assists, you own the brand and the claim. No fabricated stats or fake reviews, disclose AI and endorsements where required (FTC/ASA), and personalize only with consented data. Credibility is the moat AI cannot generate for you.
+    </div>
+
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Two doors, one course. Leaders never touch a tool; builders never sit through brand theory they have not first felt in a campaign.</p>
+      <div class="path"><b>🤝 Leader (no code, ever)</b>
+        <a class="pstep" href="courses/a1-ai-first-marketing.html">a1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a2-use-case-risk-map.html">a2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a3-brand-trust-disclosure.html">a3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a4-ai-ready-marketing-team.html">a4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a5-measuring-what-matters.html">a5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a6-strategy-roadmap.html">a6</a>
+      </div>
+      <div class="path"><b>🛠️ Builder (launch Cadence)</b>
+        <a class="pstep" href="courses/b1-ai-foundations-marketers.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b2-positioning-messaging.html">b2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-content-engine.html">b3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b4-seo-ai-search.html">b4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b5-paid-ads-creative.html">b5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b6-email-lifecycle.html">b6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b7-social-short-form.html">b7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b8-creative-visuals.html">b8</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b9-analytics-optimization.html">b9</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b10-governance-brand-safety.html">b10</a>
+      </div>
+      <div class="path"><b>🌱 Curious follower (a taste)</b>
+        <a class="pstep" href="courses/a1-ai-first-marketing.html">a1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a2-use-case-risk-map.html">a2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b1-ai-foundations-marketers.html">b1</a>
+      </div>
+      <div class="path"><b>🚀 Full journey (lead AND build)</b>
+        <a class="pstep" href="courses/a1-ai-first-marketing.html">a1-a6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b1-ai-foundations-marketers.html">b1-b10</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">Both tracks at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a> · sources: Harvard DCE · CXL · HubSpot Academy · Wharton + FTC/ASA + GDPR/PDPA guidance</span>
+  </footer>
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "AI +\nMarketing",
+  centerColor: "#8E1246",
+  sessions: [
+    { label: "AI-first\nmarketing", href: "courses/a1-ai-first-marketing.html", color: "#34D399",
+      concepts: [
+        { label: "Why now", href: "courses/a1-ai-first-marketing.html" },
+        { label: "Funnel value map", href: "courses/a1-ai-first-marketing.html" } ] },
+    { label: "Use-case +\nrisk map", href: "courses/a2-use-case-risk-map.html", color: "#34D399",
+      concepts: [
+        { label: "Score the bets", href: "courses/a2-use-case-risk-map.html" },
+        { label: "Brand risk", href: "courses/a2-use-case-risk-map.html" } ] },
+    { label: "Brand +\ndisclosure", href: "courses/a3-brand-trust-disclosure.html", color: "#FBBF24",
+      concepts: [
+        { label: "Voice consistency", href: "courses/a3-brand-trust-disclosure.html" },
+        { label: "FTC/ASA disclosure", href: "courses/a3-brand-trust-disclosure.html" },
+        { label: "IP + privacy", href: "courses/a3-brand-trust-disclosure.html" } ] },
+    { label: "AI-ready\nteam", href: "courses/a4-ai-ready-marketing-team.html", color: "#FBBF24",
+      concepts: [
+        { label: "New roles", href: "courses/a4-ai-ready-marketing-team.html" },
+        { label: "Human-in-loop", href: "courses/a4-ai-ready-marketing-team.html" } ] },
+    { label: "Measure\nwhat matters", href: "courses/a5-measuring-what-matters.html", color: "#FB923C",
+      concepts: [
+        { label: "Efficiency vs effect", href: "courses/a5-measuring-what-matters.html" },
+        { label: "Buy vs build", href: "courses/a5-measuring-what-matters.html" } ] },
+    { label: "Strategy +\nroadmap", href: "courses/a6-strategy-roadmap.html", color: "#FB923C",
+      concepts: [
+        { label: "Agentic future", href: "courses/a6-strategy-roadmap.html" },
+        { label: "CMO narrative", href: "courses/a6-strategy-roadmap.html" } ] },
+    { label: "AI\nfoundations", href: "courses/b1-ai-foundations-marketers.html", color: "#34D399",
+      concepts: [
+        { label: "Can vs can't", href: "courses/b1-ai-foundations-marketers.html" },
+        { label: "Tool landscape", href: "courses/b1-ai-foundations-marketers.html" },
+        { label: "Brand + privacy rails", href: "courses/b1-ai-foundations-marketers.html" } ] },
+    { label: "Positioning +\nmessaging", href: "courses/b2-positioning-messaging.html", color: "#FBBF24",
+      concepts: [
+        { label: "ICP", href: "courses/b2-positioning-messaging.html" },
+        { label: "Value prop", href: "courses/b2-positioning-messaging.html" },
+        { label: "Message-market fit", href: "courses/b2-positioning-messaging.html" } ] },
+    { label: "Content\nengine", href: "courses/b3-content-engine.html", color: "#FBBF24",
+      concepts: [
+        { label: "Brand voice", href: "courses/b3-content-engine.html" },
+        { label: "Briefs", href: "courses/b3-content-engine.html" },
+        { label: "Kill AI-tells", href: "courses/b3-content-engine.html" } ] },
+    { label: "SEO &\nAI-search", href: "courses/b4-seo-ai-search.html", color: "#FB923C",
+      concepts: [
+        { label: "Topic clusters", href: "courses/b4-seo-ai-search.html" },
+        { label: "GEO", href: "courses/b4-seo-ai-search.html" } ] },
+    { label: "Paid ads +\ncreative", href: "courses/b5-paid-ads-creative.html", color: "#FBBF24",
+      concepts: [
+        { label: "Copy variants", href: "courses/b5-paid-ads-creative.html" },
+        { label: "A/B ready", href: "courses/b5-paid-ads-creative.html" } ] },
+    { label: "Email +\nlifecycle", href: "courses/b6-email-lifecycle.html", color: "#FBBF24",
+      concepts: [
+        { label: "Sequences", href: "courses/b6-email-lifecycle.html" },
+        { label: "Segmentation", href: "courses/b6-email-lifecycle.html" } ] },
+    { label: "Social &\nshort-form", href: "courses/b7-social-short-form.html", color: "#34D399",
+      concepts: [
+        { label: "One to many", href: "courses/b7-social-short-form.html" },
+        { label: "Calendar", href: "courses/b7-social-short-form.html" } ] },
+    { label: "Creative &\nvisuals", href: "courses/b8-creative-visuals.html", color: "#FB923C",
+      concepts: [
+        { label: "On-brand images", href: "courses/b8-creative-visuals.html" },
+        { label: "IP + rights", href: "courses/b8-creative-visuals.html" } ] },
+    { label: "Analytics +\noptimize", href: "courses/b9-analytics-optimization.html", color: "#FB923C",
+      concepts: [
+        { label: "Read results", href: "courses/b9-analytics-optimization.html" },
+        { label: "Next experiment", href: "courses/b9-analytics-optimization.html" } ] },
+    { label: "Governance +\nbrand safety", href: "courses/b10-governance-brand-safety.html", color: "#F87171",
+      concepts: [
+        { label: "Disclosure at scale", href: "courses/b10-governance-brand-safety.html" },
+        { label: "Prompt injection", href: "courses/b10-governance-brand-safety.html" },
+        { label: "Launch checklist", href: "courses/b10-governance-brand-safety.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

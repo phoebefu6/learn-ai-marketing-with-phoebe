@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 1 · AI foundations for marketers - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 1 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 1 of 10</div>
+    <h1>AI foundations for marketers: <span class="accent">speed without the slop</span></h1>
+    <p class="sub">Before you point AI at a single campaign, one honest hour: what a large language model is genuinely great at in marketing, where it quietly invents things that can burn your brand, and the two rails that keep you credible. By the end you can tell content that will land from confident filler - the skill that separates AI leverage from AI slop.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Builder track</span>
+      <span class="chip audience">Practitioners: content · growth · brand · social</span>
+      <span class="chip audience">ChatGPT or Claude · no code</span>
+      <span class="chip time">Start here</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · What AI does for marketers</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: slop vs grounded</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>How this track works</h2>
+    </div>
+    <p class="lede">Ten sessions, all hands-on, all building one real thing: the launch campaign for <strong>Cadence</strong>, a sample AI note-taker with a free solo plan and a paid Teams plan, so you practise both B2C and B2B motions on one artifact. Tonight you learn what the tool is; then b2 nails positioning with a live simulator, and b3-b10 build the content, SEO, ads, email, social, creative, and measurement of a full campaign. No code, ever. Two rails run through all ten, starting now.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A clear model of what AI can and cannot be trusted to do in marketing, a two-rail habit (own-the-brand-and-claim + data-privacy) you will use every session, a side-by-side demo of AI slop versus a grounded draft, and your team's own one-page AI marketing ground rules.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: WHAT AN LLM IS FOR A MARKETER ============ -->
+  <section class="section" id="what-llm-is">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers HubSpot AI + 2026 AI-marketing foundations</span>
+      <h2>What an LLM actually is - for a marketer <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">A large language model is a very good next-word predictor trained on a huge slice of text. That one fact explains its magic and its danger for marketing: it is a brilliant first-draft, ideation, and rewriting engine, and an untrustworthy source of facts, stats, and claims. Knowing which is which is the whole game.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What to trust an LLM with in marketing: strong at drafting, ideation, and reasoning over your brief; risky at facts, stats, and claims - verify those">
+        <style>
+          .b1cT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b1cI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b1cX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b1cXi { font: 400 12.5px Inter, sans-serif; fill: #7A4A06; }
+          .b1cN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="30" y="46" width="195" height="96" rx="12" fill="#C2185B"/>
+        <text class="b1cT" x="52" y="84">Draft &amp; rewrite</text>
+        <text class="b1cX" x="52" y="106">copy, posts, emails -</text>
+        <text class="b1cX" x="52" y="124">trust, then edit</text>
+        <rect x="240" y="46" width="195" height="96" rx="12" fill="#E24A85"/>
+        <text class="b1cT" x="262" y="84">Ideate at volume</text>
+        <text class="b1cX" x="262" y="106">angles, hooks, variants</text>
+        <text class="b1cX" x="262" y="124">to pick from</text>
+        <rect x="450" y="46" width="195" height="96" rx="12" fill="#F4A9C7"/>
+        <text class="b1cI" x="472" y="84">Reason on YOUR brief</text>
+        <text class="b1cXi" x="472" y="106">summarize, restructure,</text>
+        <text class="b1cXi" x="472" y="124">tailor to a segment</text>
+        <rect x="660" y="46" width="195" height="96" rx="12" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="b1cI" x="682" y="84">Facts + stats ✗</text>
+        <text class="b1cXi" x="682" y="106">do NOT trust claims -</text>
+        <text class="b1cXi" x="682" y="124">verify every number</text>
+        <rect x="30" y="250" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b1cN" x="54" y="262">The rule: bring your own facts, use AI for the words, and verify every claim before it ships.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the marketing reliability map: three you can trust, one you must verify</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why it invents stats - and why that is a brand risk, not a quirk<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The model generates the <em>most likely-sounding</em> continuation, not the true one. Ask it for "three statistics proving marketers love our category" and it will produce three confident, well-cited, completely invented numbers - because plausible stats are a likely continuation. In marketing that is not a curiosity; it is a fabricated claim that can reach thousands and land you in front of a regulator.</p>
+        <ul>
+          <li><strong>It is probabilistic, not factual.</strong> No lookup happens unless you supply the source. Fluency tells you nothing about truth.</li>
+          <li><strong>Invented stats and fake sources are the classic trap.</strong> "73% of buyers say..." with a real-looking citation that does not exist. Never publish a number the model produced from memory.</li>
+          <li><strong>The fix is grounding, not scolding.</strong> "Be accurate" does nothing. Giving it your real research, brief, and proof points does almost everything.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - watch it invent</span>Give me five specific statistics, with sources, proving that teams waste hours every week on meeting notes. Make them precise and citable.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The campaign built on a stat that never existed.</strong> A team asked a chatbot for "a punchy market stat" and dropped the confident figure straight into an ad and a landing page. It was invented. The ad ran, a prospect asked for the source, and the whole campaign had to be pulled and corrected. An ungrounded marketing claim is a liability with good formatting.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The can / cannot table - pin this to your monitor<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Trust it to...</th><th>Never trust it to (without a source + check)</th></tr></thead>
+          <tbody>
+            <tr><td>Draft and rewrite copy from your brief</td><td>Produce stats, market data, or citations from memory</td></tr>
+            <tr><td>Generate angles, hooks, and variants to choose from</td><td>Make claims about your product's performance</td></tr>
+            <tr><td>Summarize research and restructure it</td><td>Quote a customer or a review that does not exist</td></tr>
+            <tr><td>Tailor one message to different segments</td><td>Know anything after its training cutoff</td></tr>
+            <tr><td>Draft outlines, briefs, and calendars</td><td>Be the source of truth for a legal or comparative claim</td></tr>
+          </tbody>
+        </table>
+        <p>Everything on the left is a build-along later in this track. Everything on the right is why every session pairs AI drafting with your sources and your review.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE TOOL LANDSCAPE ============ -->
+  <section class="section" id="tool-landscape">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the 2026 martech-AI tool surveys</span>
+      <h2>The marketing AI tool landscape, 2026 <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">"Which AI tool should we use?" is the wrong first question. The right one is: <em>is this tool safe for the data I am about to put in it, and does it protect our brand?</em> There are three layers, and the line between them is about data and control, not raw quality.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three layers of marketing AI tools: general assistants, marketing-native tools, and in-suite copilots - separated by a data and brand-control line">
+        <style>
+          .b1sT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b1sI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b1sX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b1sXi { font: 400 12.5px Inter, sans-serif; fill: #64748B; }
+          .b1sN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="30" y="40" width="540" height="58" rx="12" fill="#F4A9C7"/>
+        <text class="b1sI" x="54" y="66">Marketing-native tools</text>
+        <text class="b1sI" x="54" y="86" font-weight="400" font-size="12.5">Jasper · Copy.ai · HubSpot AI · Canva - workflow + brand kits built in</text>
+        <rect x="30" y="120" width="540" height="58" rx="12" fill="#C2185B"/>
+        <text class="b1sT" x="54" y="146">General assistants</text>
+        <text class="b1sX" x="54" y="166">ChatGPT · Claude · Gemini · Copilot - the workhorses for drafting + ideation</text>
+        <rect x="30" y="200" width="540" height="58" rx="12" fill="#8E1246"/>
+        <text class="b1sT" x="54" y="226">In-suite copilots</text>
+        <text class="b1sX" x="54" y="246">in your CMS, ESP, ad platform, and CRM - AI where the work already lives</text>
+        <rect x="610" y="120" width="240" height="138" rx="12" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="b1sI" x="632" y="148">The data + brand line</text>
+        <text class="b1sXi" x="632" y="172">Customer PII + unpub</text>
+        <text class="b1sXi" x="632" y="190">plans -&gt; enterprise/tools</text>
+        <text class="b1sXi" x="632" y="208">with brand controls.</text>
+        <text class="b1sXi" x="632" y="232">Public ideation -&gt; any</text>
+        <text class="b1sXi" x="632" y="250">assistant is fine.</text>
+        <rect x="30" y="284" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b1sN" x="54" y="296">Quality is similar across layers - what differs is data safety and brand control.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - three tool layers, one line that decides which is safe for your data</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>General vs marketing-native vs in-suite<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Each layer has a job. Do not pay for a specialist tool to do what a general assistant does well, and do not push confidential data through a consumer tool to save a click.</p>
+        <ul>
+          <li><strong>General assistants</strong> (ChatGPT, Claude, Gemini, Copilot) are the flexible workhorses for drafting, ideation, and reasoning over a brief you paste in.</li>
+          <li><strong>Marketing-native tools</strong> (Jasper, Copy.ai, HubSpot AI, Canva) add brand kits, templates, and workflow - useful when consistency and speed at scale matter.</li>
+          <li><strong>In-suite copilots</strong> live in your CMS, email platform, ad manager, and CRM - convenient, and governed by that vendor's data terms. Read them.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>One-question test before you paste</strong>
+          "If this text or data leaked publicly tomorrow, is that fine?" Yes - any tool. No - an enterprise tier or an approved tool only. That is rail one, and it holds for customer lists as much as for unreleased plans.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The 2026 landscape at a glance<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>General assistants:</strong> ChatGPT, Claude, Gemini, Microsoft Copilot - drafting, ideation, analysis-over-supplied-material.</li>
+          <li><strong>Marketing-native:</strong> Jasper, Copy.ai, Writer, HubSpot AI, Canva Magic - brand-kit consistency and templated production.</li>
+          <li><strong>In-suite copilots:</strong> in HubSpot, Klaviyo, Meta/Google Ads, Salesforce - AI where campaigns already run.</li>
+          <li><strong>The trend:</strong> 2026 curricula treat AI as a co-pilot across the whole funnel - research, positioning, content, SEO, ads, email, social, analytics - not a single magic button.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE TWO RAILS ============ -->
+  <section class="section" id="two-rails">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the habit every later session assumes</span>
+      <h2>The two rails: own the brand, protect the data <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Everything else in this course is technique. These two rails are non-negotiable, and they are what separate a marketer who gets leverage from AI from one who becomes a cautionary headline.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Rail 1 - you own the brand and the claim<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>AI drafts; you own every word, claim, and image that goes out under your brand. That means no fabricated stats, no fake reviews or testimonials, no unverifiable comparative claims - and clear <strong>disclosure</strong> where the law requires it. The FTC (US) and ASA (UK) both require that AI-generated endorsements and material connections be disclosed and that ads not deceive.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The fake-review crackdown.</strong> Regulators have fined brands for AI-generated and incentivized reviews presented as genuine. The marketing equivalent of the finance scandal: it is fast, it is cheap, and it is exactly the kind of shortcut AI makes tempting. Rail one exists so your credibility - the one thing AI cannot manufacture for you - stays intact.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Rail 2 - protect the data (privacy + consent)<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Personalization is powerful and legally loaded. Use consented first-party data, respect GDPR and PDPA, and never paste customer PII or unreleased plans into a consumer AI tool. Great targeting that breaks privacy law is not a win.</p>
+        <ul>
+          <li><strong>Consent is the foundation.</strong> Personalize with data people agreed to share, for the purpose they agreed to.</li>
+          <li><strong>Keep confidential data in safe tools.</strong> Customer lists, unreleased launches, and contracts go in enterprise or approved tools only (rail one of the data world).</li>
+          <li><strong>Design for it.</strong> Every workflow you build in this track has a human review step and a "would I be comfortable if this were public" check.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Say it out loud once</strong>
+          "AI drafts, I own the brand and the claim, and I protect the data." That sentence is the spine of the whole builder track.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Slop vs grounded - watch the fabrication die <span class="tag demo">★ 12 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">The single most important habit in the course, in one experiment. Ask for the same marketing asset twice - once from the model's memory, once grounded in a real brief - and watch generic, invented copy become something you would actually ship.</p>
+
+    <div class="steps">
+      <div class="step"><p>Open any chat AI. Pick a safe subject: a public product, or our sample product Cadence. Keep it non-confidential (rail two).</p></div>
+      <div class="step"><p><strong>Ungrounded ask:</strong> "write a landing-page hero with a strong stat" - no brief. Note how generic the copy is and how the "stat" is invented.</p></div>
+      <div class="step"><p><strong>Grounded ask:</strong> paste a short brief - who it is for, the real pain, one true proof point, the offer - and ask again, adding "use only the facts in this brief; if you need a stat I did not give you, say [need source] instead of inventing one".</p></div>
+      <div class="step"><p>Compare. The grounded version speaks to a real person, uses only claims you can back, and flags gaps instead of faking them. That delta - slop to shippable - is the value of everything that follows.</p></div>
+      <div class="step"><p>Now stress it: remove the proof point and re-run. A good prompt makes it write "[need source]" rather than invent. That is the behaviour you will engineer on purpose in b2 and b3.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">Prompt A - ungrounded (produces slop + invented stats)</span>Write a punchy landing-page hero for our product, and include an impressive statistic.</div>
+
+    <div class="prompt-box good"><span class="label">★ Prompt B - grounded (produces shippable copy)</span>Brief - use ONLY these facts:
+Product: Cadence, an AI note-taker. For: consultants and team leads in back-to-back meetings.
+Pain: they lose decisions and action items in the scramble between calls.
+Proof: notes + action items are drafted the moment a call ends. Offer: free solo plan; paid Teams plan.
+
+Write a landing-page hero (headline + subhead + CTA) for this audience.
+Rules: use only the facts above, make no claim I did not give you, and if you
+want a statistic I did not provide, write "[need source]" rather than inventing one.</div>
+
+    <div class="callout tip">
+      <strong>Why this is demo one</strong>
+      Every later session is a variation on "ground it in a real brief, forbid invented claims, and edit". Positioning (b2), content (b3), and ads (b5) are this same move at higher stakes. Learn it once tonight.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Write your team's AI marketing ground rules <span class="tag demo">★ 10 min · build your own</span></h2>
+    </div>
+    <p class="lede">A reusable artifact you will actually keep: a short "how our marketing team uses AI" card. You draft it with AI, then edit it - which is rail one in miniature.</p>
+
+    <div class="steps">
+      <div class="step"><p>Give the AI the two rails and your context: team, the tools you have (or have not) approved, and the data you handle (customer lists, unreleased launches, brand assets).</p></div>
+      <div class="step"><p>Ask for a one-page card with three lists: <em>Green light</em> (safe uses + which tool), <em>Red light</em> (never: fabricated stats, fake reviews, PII in consumer tools), and <em>Always</em> (verify claims, disclose where required, human sign-off, stay on brand voice).</p></div>
+      <div class="step"><p>Edit it hard. Add your actual brand-voice rules, tool names, and approvers. The AI draft is 70%; your judgement is the 30% that makes it real.</p></div>
+      <div class="step"><p>Share it with the team. You will refine it again in the leader session a3 (brand + disclosure) and the builder finale b10 (governance at scale).</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The ground-rules prompt</span>Draft a one-page "AI marketing ground rules" card for our team.
+Context: we run content, social, email, and paid; we handle customer lists and
+unreleased launch plans; approved tools are [list, or "none yet"].
+
+Build it around two rails:
+1) We own the brand and the claim: no fabricated stats, no fake reviews, disclose
+   AI/endorsements where required, everything stays in brand voice.
+2) We protect data: consented first-party data only, no PII or unreleased plans in
+   consumer tools.
+
+Format: three short lists - Green light (safe uses + tool), Red light (never), and
+Always (verify claims, disclose, human sign-off). Plain language, fits on one page.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The card that unblocked a team.</strong> A content team was split - half afraid of AI, half quietly pasting client data into free tools. A one-page card agreed in half an hour replaced both fear and free-for-all with a shared green light. Output went up and risk went down, because "what's allowed" stopped being a guess.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both demos if you did not complete them live - especially slop-vs-grounded. Feeling the fabrication yourself beats being told about it.</li>
+      <li>Run the ungrounded prompt on three real asks from your week. Screenshot the invented stats - that is your reminder to always bring your own facts.</li>
+      <li>Finalise your one-page AI marketing ground rules and share it with a colleague for a sanity check.</li>
+      <li>Confirm which tools you are cleared to use for real customer data. If the answer is "none yet", that is a great thing to raise - the leader session a4 helps.</li>
+      <li>Optional: skim your brand-voice guide (or note that you need one). Bring one voice rule to session b2.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula and vendor documentation. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">HubSpot Academy - AI for marketing (foundations)</span><span class="note">Part 1 · what AI does well and badly in marketing</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">2026 AI-marketing guides (Coursiv / Udemy / Great Learning)</span><span class="note">Part 2 · the tool landscape, consumer vs enterprise</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">FTC + ASA guidance on AI, endorsements &amp; disclosure</span><span class="note">Part 3 · rail one; full depth in leader session a3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">GDPR / PDPA + consent for personalization</span><span class="note">Part 3 · rail two, sourced in the course map</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · You ask a chatbot for "a strong market statistic" with no source. It gives a precise, cited number. What do you know?</p>
+      <button class="qopt" type="button">A · It is accurate because it has a citation</button>
+      <button class="qopt" type="button">B · It likely invented the stat and the source - never publish it without verifying</button>
+      <button class="qopt" type="button">C · Bigger models do not do this</button>
+      <p class="qwhy">An LLM predicts likely text, not true facts. A confident stat with no supplied source is a fabricated claim - a brand and legal risk. Bring your own facts.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · You need to personalize an email using your customer list. Which tool is acceptable?</p>
+      <button class="qopt" type="button">A · Any free chatbot - it is faster</button>
+      <button class="qopt" type="button">B · Whatever is already open</button>
+      <button class="qopt" type="button">C · An enterprise or approved tool, using consented first-party data</button>
+      <p class="qwhy">Rail two. Customer PII goes only in approved tools, and personalization uses consented data under GDPR/PDPA. Great targeting that breaks privacy law is not a win.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is the reliable fix for AI that produces generic, invented copy?</p>
+      <button class="qopt" type="button">A · Ground it in a real brief and forbid claims you did not supply, then edit</button>
+      <button class="qopt" type="button">B · Add "be creative and accurate" to the prompt</button>
+      <button class="qopt" type="button">C · Use a newer model</button>
+      <p class="qwhy">Scolding does nothing; a real brief plus a "no invented claims" rule does almost everything. Ground it, forbid fabrication, and keep a human edit. That is the whole track in one line.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>An LLM is</b><span>a next-word predictor - a language engine, not a fact source. Great at words, risky at stats and claims.</span></div>
+      <div class="cheat-item"><b>The slop trap</b><span>confident, fluent, invented copy and stats. Fluency ≠ truth. Ungrounded marketing is a liability with formatting.</span></div>
+      <div class="cheat-item"><b>The universal fix</b><span>ground it in a real brief → forbid claims you did not supply → edit. Every session is a variation on this.</span></div>
+      <div class="cheat-item"><b>Trust it to</b><span>draft, rewrite, ideate variants, reason over your brief, tailor to a segment, outline and plan.</span></div>
+      <div class="cheat-item"><b>Never trust unchecked</b><span>stats, market data, citations, reviews, comparative claims, anything past its training cutoff.</span></div>
+      <div class="cheat-item"><b>Tool layers</b><span>general assistants · marketing-native · in-suite copilots. Similar quality; different data safety.</span></div>
+      <div class="cheat-item"><b>Rail 1 - own it</b><span>you own the brand + the claim: no fabricated stats or fake reviews; disclose AI/endorsements (FTC/ASA).</span></div>
+      <div class="cheat-item"><b>Rail 2 - protect data</b><span>consented first-party data; no PII or unreleased plans in consumer tools (GDPR/PDPA).</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 1 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="b2-positioning-messaging.html">Next: Positioning &amp; messaging →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

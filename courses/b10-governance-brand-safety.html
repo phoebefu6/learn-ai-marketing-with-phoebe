@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 10 · Governance, brand safety & scaling - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 10 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 10 of 10</div>
+    <h1>Governance, brand safety &amp; scaling: <span class="accent">ship it without breaking the brand</span></h1>
+    <p class="sub">The finale. You have built the whole Cadence campaign; tonight you make it safe to launch at volume. The move that breaks brands is not going slow - it is scaling AI content faster than your controls. You will map the risk stack, put the controls in place, and run a real launch-readiness check against one Cadence asset you already built. Walk out ready to actually ship.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Builder track</span>
+      <span class="chip audience">Practitioners: marketing ops + brand + legal-adjacent</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-21 · Risk stack + controls</span>
+      <span class="a3" style="flex:5">21-42 · Build-along: readiness + spec</span>
+      <span class="a4" style="flex:1">42-45 · Close</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>The last mile before launch</h2>
+    </div>
+    <p class="lede">This is the builder mirror of leader session a3. Across b1-b9 you learned to draft, position, optimize, and measure with AI. But volume changes the risk: one off-brand paragraph is a shrug, ten thousand is a crisis, and one undisclosed AI endorsement at scale is a regulator's headline. Tonight is about the controls that let you move fast without becoming the cautionary story - and then you run them against your own Cadence work.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A launch-readiness checklist run against a real Cadence asset - claims verified, disclosure applied, brand voice held, data safe - plus a disclosure + brand-safety spec for the campaign that says what to disclose, what to never ship, and who signs off. And the whole Cadence launch campaign, built by you across ten sessions, ready to go.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE RISK STACK ============ -->
+  <section class="section" id="risk-stack">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers FTC/ASA + security canon (source map)</span>
+      <h2>Scaling without breaking the brand: the risk stack <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">The same AI leverage that let you produce a full campaign fast is what makes small mistakes large. Before controls, you have to see the stack of things that go wrong when volume climbs. Every layer is survivable at the scale of one asset and dangerous at the scale of a launch.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The brand-safety risk stack: six ways AI marketing breaks at volume, from brand-voice drift and undisclosed AI to fabricated claims, prompt injection, data leakage, and content sludge - all amplified as scale increases">
+        <defs>
+          <marker id="b10Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <style>
+          .b10T { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b10I { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b10X { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b10Xi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b10N { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="120" y="40" width="620" height="44" rx="10" fill="#8E1246"/>
+        <text class="b10T" x="140" y="60">Brand-voice drift at volume</text>
+        <text class="b10X" x="140" y="76">10,000 near-brand pieces stop sounding like you</text>
+        <rect x="120" y="92" width="620" height="44" rx="10" fill="#C2185B"/>
+        <text class="b10T" x="140" y="112">Undisclosed AI / endorsements</text>
+        <text class="b10X" x="140" y="128">AI testimonials + connections not disclosed (FTC/ASA)</text>
+        <rect x="120" y="144" width="620" height="44" rx="10" fill="#E24A85"/>
+        <text class="b10T" x="140" y="164">Fabricated claims slipping through</text>
+        <text class="b10X" x="140" y="180">an invented stat in one of a thousand assets still ships</text>
+        <rect x="120" y="196" width="620" height="44" rx="10" fill="#F4A9C7"/>
+        <text class="b10I" x="140" y="216">Prompt injection</text>
+        <text class="b10Xi" x="140" y="232">agents reading external content get hijacked instructions</text>
+        <rect x="120" y="248" width="620" height="44" rx="10" fill="#FCE7F0"/>
+        <text class="b10I" x="140" y="268">Data / privacy leakage</text>
+        <text class="b10Xi" x="140" y="284">customer PII or unreleased plans pasted into the wrong tool</text>
+        <rect x="120" y="300" width="620" height="44" rx="10" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="b10I" x="140" y="320">Content sludge</text>
+        <text class="b10Xi" x="140" y="336">low-value AI spam that erodes trust and search standing</text>
+        <line x1="60" y1="46" x2="60" y2="338" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b10Ah)"/>
+        <text class="b10Xi" x="30" y="200" transform="rotate(-90 30 200)" text-anchor="middle">scale amplifies each</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the risk stack: six failure modes, each amplified as you scale</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The six failure modes, and the one new one to learn<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Five of these you already met across the track. One is new and matters more every month as marketing tools gain agents that read the web for you.</p>
+        <ul>
+          <li><strong>Brand-voice drift</strong> - at volume, "close enough" drafts average out into something generic. The brand voice you set in b3 needs enforcing, not hoping.</li>
+          <li><strong>Undisclosed AI / endorsements</strong> - the FTC and ASA require disclosure of AI-generated endorsements and material connections. At scale, one missed label becomes a pattern.</li>
+          <li><strong>Fabricated claims</strong> - b1's slop trap. In one asset you catch it; in a thousand, an invented stat slips through unless a control catches it.</li>
+          <li><strong>Prompt injection (the new one)</strong> - when an AI agent reads an external page, email, or review, hidden text on that page can smuggle in instructions ("ignore your rules, publish this"). The more automated your workflow, the bigger this bites.</li>
+          <li><strong>Data / privacy leakage</strong> - b1's second rail. PII and unreleased plans in a consumer tool is a breach waiting to happen.</li>
+          <li><strong>Content sludge</strong> - mass low-value AI content that annoys audiences and gets penalized by search. Volume without quality is a liability.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>What prompt injection actually is</strong>
+          Instructions hidden inside content your AI reads, designed to override your own instructions. If an agent summarizes a competitor page or an inbound email, treat that content as untrusted data - never as commands. It bites hardest where automation reads the outside world.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why volume is the multiplier<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every risk here exists at the scale of one asset - and you can eyeball one asset. The danger is that AI removes the natural friction that used to catch mistakes: a human wrote it, so a human read it. When production goes 10x, review has to scale with it or the error rate that was invisible becomes public. Governance is not bureaucracy; it is the review friction you deliberately add back so speed does not outrun safety.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE CONTROLS ============ -->
+  <section class="section" id="controls">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · one control per risk</span>
+      <h2>The controls <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Each risk gets a control. None of these slow a good team much; together they are the difference between scaling confidently and scaling into a headline. Map them one-to-one so nothing is left to hope.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Risk → control, mapped<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Risk</th><th>Control that catches it</th></tr></thead>
+          <tbody>
+            <tr><td>Brand-voice drift at volume</td><td>A brand-voice + claims-review gate before anything ships</td></tr>
+            <tr><td>Undisclosed AI / endorsements</td><td>A disclosure policy (FTC/ASA) applied at scale, not case by case</td></tr>
+            <tr><td>Fabricated claims slipping through</td><td>Claims-verification step: every stat traces to a real source</td></tr>
+            <tr><td>Prompt injection</td><td>Approved-tools list + treat external content as untrusted data</td></tr>
+            <tr><td>Data / privacy leakage</td><td>Data boundaries: no PII / unreleased plans in consumer tools</td></tr>
+            <tr><td>Content sludge</td><td>Human sign-off + a quality bar; volume never waives review</td></tr>
+            <tr><td>Silent tool / model changes</td><td>Version + model change management; re-check when a tool updates</td></tr>
+          </tbody>
+        </table>
+        <p>Notice the last row: a control for a risk that is easy to forget. The AI tool you approved can change its model or defaults overnight, quietly shifting how your content reads. A light review cadence catches drift you did not cause.</p>
+        <div class="prompt-box good"><span class="label">★ Try it now - build your control list</span>Here are the six risks of scaling AI marketing content (paste the list). For each, propose one lightweight control a small marketing team could actually run, plus who owns it. Keep controls practical - no control should need a full-time reviewer.</div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The review cadence that keeps controls alive<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Per-asset:</strong> brand-voice + claims + disclosure check, then human sign-off. Non-negotiable before publish.</li>
+          <li><strong>Weekly:</strong> spot-check a sample of shipped content for drift and sludge; confirm nothing crept past the gate.</li>
+          <li><strong>On change:</strong> when an approved tool updates its model or terms, re-verify a few outputs before trusting the rest.</li>
+          <li><strong>Per-campaign:</strong> confirm the disclosure policy still matches how you are using AI, and that data boundaries held.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: LAUNCH CHECKLIST + SIGN-OFF ============ -->
+  <section class="section" id="sign-off">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · ties back to leader session a3</span>
+      <h2>The launch checklist + sign-off <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Controls only work if someone owns the "yes". A launch has three sign-offs, a monitoring plan, and a rehearsed way to pull and correct - because the fastest recovery from a bad launch is one you planned for.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The launch sign-off flow: a ready asset passes marketing, brand, and legal-adjacent sign-off before launch, with monitoring and a rollback path back to correction if something breaks">
+        <defs>
+          <marker id="b10zAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <style>
+          .b10zT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b10zI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b10zX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b10zXi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b10zN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="20" y="50" width="150" height="70" rx="12" fill="#8E1246"/>
+        <text class="b10zT" x="38" y="82">Asset ready</text>
+        <text class="b10zX" x="38" y="102">built in b1-b9</text>
+        <line x1="174" y1="85" x2="205" y2="85" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b10zAh)"/>
+        <rect x="210" y="50" width="150" height="70" rx="12" fill="#C2185B"/>
+        <text class="b10zT" x="228" y="82">Marketing</text>
+        <text class="b10zX" x="228" y="102">claims + voice</text>
+        <line x1="364" y1="85" x2="395" y2="85" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b10zAh)"/>
+        <rect x="400" y="50" width="150" height="70" rx="12" fill="#E24A85"/>
+        <text class="b10zT" x="418" y="82">Brand</text>
+        <text class="b10zX" x="418" y="102">on-brand + safe</text>
+        <line x1="554" y1="85" x2="585" y2="85" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b10zAh)"/>
+        <rect x="590" y="50" width="150" height="70" rx="12" fill="#F4A9C7"/>
+        <text class="b10zI" x="608" y="82">Legal check</text>
+        <text class="b10zXi" x="608" y="102">disclosure + IP</text>
+        <line x1="744" y1="85" x2="775" y2="85" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b10zAh)"/>
+        <rect x="730" y="140" width="150" height="70" rx="12" fill="#8E1246"/>
+        <text class="b10zT" x="748" y="172">Launch</text>
+        <text class="b10zX" x="748" y="192">+ monitoring</text>
+        <path d="M805,140 L805,85" fill="none" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b10zAh)"/>
+        <path d="M730,175 L285,175 L285,124" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#b10zAh)"/>
+        <text class="b10zN" x="300" y="170">rollback + correct if something breaks (the pulled-ad plan)</text>
+        <rect x="20" y="226" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b10zN" x="44" y="238">Three sign-offs before launch; a rehearsed rollback path after. Plan the pull before you need it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the sign-off flow: marketing, brand, legal, then launch with a rollback plan</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Who signs off, monitoring, and the rollback plan<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The sign-off is not ceremony; it is the moment a named human owns the risk. Keep it light but real.</p>
+        <ul>
+          <li><strong>Marketing</strong> owns claims and brand voice: every stat verified, voice held, no slop.</li>
+          <li><strong>Brand</strong> owns tone and safety: on-brand, no reputational landmine, disclosure present.</li>
+          <li><strong>Legal-adjacent</strong> owns disclosure and IP: FTC/ASA labels correct, rights-clear creative, privacy respected. In a small team this may be one careful person wearing the hat.</li>
+          <li><strong>Monitoring</strong> after launch: watch for the source question ("where's that stat from?"), off-brand replies, and anything the gate missed.</li>
+          <li><strong>Rollback:</strong> a rehearsed way to pause the ad, pull the page, and issue a correction - exactly the recovery the pulled-ad story in b1 needed. Plan it before you need it.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The pulled ad, revisited.</strong> Back in b1, a campaign shipped an invented stat, a prospect asked for the source, and the whole thing had to be pulled. The team that recovers fastest is not the one that never errs - it is the one with a sign-off that catches most of it and a rollback plan for the rest. Governance turns a crisis into a correction.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Run a launch-readiness check on a real Cadence asset <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Pick one asset you actually built earlier in the track - the Cadence blog post, an ad, or a lifecycle email - and score it against the controls. This is the check that decides whether it is safe to ship.</p>
+
+    <div class="steps">
+      <div class="step"><p>Choose one Cadence asset from b3-b8. Paste it into the chat AI along with the four control questions below.</p></div>
+      <div class="step"><p>Score each control: <em>Claims verified?</em> (every stat traces to a real source), <em>Disclosed?</em> (AI/endorsement labels where required), <em>On-brand?</em> (matches your b3 voice), <em>Data safe?</em> (no PII or unreleased detail that should not be public).</p></div>
+      <div class="step"><p>For any "no" or "unsure", have the AI list exactly what to fix - a missing source, a missing disclosure line, an off-voice sentence. Then fix it.</p></div>
+      <div class="step"><p>Re-score after the fixes. The asset should now pass all four. That green row is your evidence it is launch-ready.</p></div>
+      <div class="step"><p>Remember rail one: the AI helps you score, but you own the pass/fail. A confident "looks fine" is a recommendation, not a sign-off.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The launch-readiness prompt</span>You are my launch-readiness reviewer. Here is one Cadence marketing asset (paste it).
+
+Score it against four controls, one at a time, with PASS / FAIL / UNSURE and a reason:
+1) Claims verified - is every statistic or factual claim traceable to a real source I can cite? Flag any that reads invented.
+2) Disclosed - does it disclose AI-generated endorsements or material connections where FTC/ASA would require it?
+3) On-brand - does it match a calm, credible, jargon-light Cadence voice?
+4) Data safe - does it expose any PII or unreleased detail that should not be public?
+
+For every FAIL or UNSURE, tell me exactly what to change. Do not pass anything you are unsure about.</div>
+
+    <div class="callout tip">
+      <strong>Do this for every asset before it ships</strong>
+      Four questions, one asset, five minutes. Run at scale via your gate, this is the friction that keeps volume from turning small mistakes into public ones.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Write the campaign's disclosure + brand-safety spec <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">One page that governs the whole Cadence launch: what you disclose, what you never ship, and who signs off. Draft it with AI, then edit it - the artifact you hand a team so safety does not live only in your head.</p>
+
+    <div class="steps">
+      <div class="step"><p>Give the AI the risk stack, the controls, and your context: the Cadence campaign, the channels you run, and the tools you approved.</p></div>
+      <div class="step"><p>Ask for a one-page spec with three parts: <em>Disclose</em> (where and how - FTC/ASA), <em>Never ship</em> (fabricated stats, fake reviews, PII in consumer tools, unlabeled AI endorsements), and <em>Sign-off</em> (who owns marketing, brand, and legal-adjacent approval + the rollback plan).</p></div>
+      <div class="step"><p>Edit it hard. Put in real names, your actual tools, and your real disclosure wording. The AI draft is the skeleton; your judgement is what makes it enforceable.</p></div>
+      <div class="step"><p>This spec plus your b1 ground-rules card is your governance layer. It ties straight back to leader session a3 - now you have the practitioner version.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The brand-safety spec prompt</span>Draft a one-page disclosure + brand-safety spec for the Cadence AI note-taker launch.
+Context: we run blog/SEO, paid ads, email, and social; approved tools are [list].
+
+Three sections:
+1) Disclose - where and how we label AI-generated endorsements and material
+   connections (FTC/ASA), in plain wording we can paste onto assets.
+2) Never ship - the hard "no" list: fabricated stats, fake reviews, PII in consumer
+   tools, unlabeled AI endorsements, rights-unclear creative.
+3) Sign-off - who owns marketing, brand, and legal-adjacent approval before launch,
+   plus a short rollback + correction plan if something breaks after launch.
+
+Keep it to one page, plain language, ready to hand to a small team.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The spec that survived a scare.</strong> A team with a one-page brand-safety spec caught an unlabeled AI endorsement in review, added the disclosure, and shipped on time. The team without one shipped it, got a complaint, and spent a week on damage control. Same mistake, two outcomes - the spec was the difference.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the launch-readiness check on two more Cadence assets you built. Fix every FAIL and UNSURE until each passes all four controls.</li>
+      <li>Finalise your one-page disclosure + brand-safety spec and pair it with your b1 ground-rules card - together they are your governance layer.</li>
+      <li>Write your rollback plan in three lines: how you pause an ad, pull a page, and issue a correction. Rehearse it once so it is not the first time under pressure.</li>
+      <li>Test prompt injection awareness: paste a page with a hidden "ignore your instructions" line into a chat AI and watch how it reacts. Note the lesson - external content is data, not commands.</li>
+      <li>Optional: bring your spec to the leader session a3 discussion, or share it with whoever owns brand + legal-adjacent sign-off.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public regulatory guidance, security canon, and AI-marketing curricula. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">FTC guidance - AI, endorsements/testimonials &amp; "AI-washing"</span><span class="note">Parts 2-3 · disclosure at scale, false-claim controls</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">ASA (UK) ad rules - AI content &amp; disclosure</span><span class="note">Parts 2-3 · disclosure policy, do-not-deceive</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Security canon - prompt injection &amp; untrusted content</span><span class="note">Part 1-2 · injection with agents; external content as data</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">GDPR / PDPA + IP / likeness canon</span><span class="note">Part 2-3 · data boundaries, rights-clear creative; full depth in leader a3</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What is prompt injection, and where does it bite hardest?</p>
+      <button class="qopt" type="button">A · A typo in your prompt; it bites when you rush</button>
+      <button class="qopt" type="button">B · Hidden instructions inside content the AI reads; worst when agents read external pages, emails, or reviews</button>
+      <button class="qopt" type="button">C · When the model runs out of context</button>
+      <p class="qwhy">Prompt injection is instructions smuggled into content your AI reads, designed to override your rules. It bites hardest in automated workflows where an agent ingests the outside world - so treat external content as untrusted data, never as commands.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Why apply a disclosure policy at scale rather than case by case?</p>
+      <button class="qopt" type="button">A · Regulators only care about big campaigns</button>
+      <button class="qopt" type="button">B · Case-by-case is faster and just as safe</button>
+      <button class="qopt" type="button">C · At volume, one missed AI/endorsement label becomes a pattern - a standing policy catches every asset, not just the ones you remember</button>
+      <p class="qwhy">FTC and ASA require disclosing AI-generated endorsements and material connections. Case-by-case guarantees misses at scale; a policy applied to every asset is what makes disclosure reliable when you are shipping a lot.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · An AI reviewer scores your asset "all clear, ship it". What happens next?</p>
+      <button class="qopt" type="button">A · A named human still signs off before launch - AI assists, the human owns the go/no-go</button>
+      <button class="qopt" type="button">B · Ship it - the AI reviewed it</button>
+      <button class="qopt" type="button">C · Ship it if two AIs agree</button>
+      <p class="qwhy">AI can score against your controls, but the launch decision is a human's to own. A confident "looks fine" is a recommendation, not a sign-off. Rail one, at the finish line: the human owns the brand and the claim.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 10 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The real danger</b><span>not going slow - scaling AI content faster than your controls. Volume turns small mistakes into public ones.</span></div>
+      <div class="cheat-item"><b>The risk stack</b><span>voice drift · undisclosed AI · fabricated claims · prompt injection · data leakage · content sludge.</span></div>
+      <div class="cheat-item"><b>Prompt injection</b><span>hidden instructions in content the AI reads. Treat external pages/emails/reviews as untrusted data, not commands.</span></div>
+      <div class="cheat-item"><b>One control per risk</b><span>brand+claims gate · disclosure policy · claims-verify · approved tools · data boundaries · human sign-off · change mgmt.</span></div>
+      <div class="cheat-item"><b>Disclosure at scale</b><span>a standing FTC/ASA policy on every asset beats remembering case by case. One miss at volume is a pattern.</span></div>
+      <div class="cheat-item"><b>Three sign-offs</b><span>marketing (claims+voice) · brand (tone+safety) · legal-adjacent (disclosure+IP). A named human owns the "yes".</span></div>
+      <div class="cheat-item"><b>Plan the rollback</b><span>rehearse the pull + correction before launch. The fastest recovery is the one you planned for.</span></div>
+      <div class="cheat-item"><b>Rail one, finish line</b><span>AI scores, the human signs off. You own the brand and the claim - all the way to launch.</span></div>
+    </div>
+    <p class="lede" style="margin-top:1.1rem"><strong>🎉 You launched the Cadence campaign - builder track complete.</strong> Ten sessions, one real launch: foundations, positioning, content, SEO, ads, email, social, creative, analytics, and now governance. You did not just learn about AI marketing - you built a full campaign with the rails that keep it credible. Own the brand, protect the data, disclose at scale, and let AI assist while you decide. Go ship something you are proud of.</p>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 10 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b9-analytics-optimization.html">← Previous: Analytics &amp; optimization</a> &nbsp;·&nbsp; <a href="../index.html">← Back to all sessions</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 2 · The use-case + risk map - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Leader session 2 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Leader track · Session 2 of 6</div>
+    <h1>The use-case + risk map: <span class="accent">score the bets before you place them</span></h1>
+    <p class="sub">You cannot say yes to every AI idea, and saying no to all of them is just slower fear. This session gives you one grid to score any AI marketing use-case on value and risk, an inventory across the whole funnel, and a sequencing rule so you earn trust before you climb. You leave with a scored shortlist and a defensible first bet.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Leader track</span>
+      <span class="chip audience">Leaders: CMOs · heads of marketing</span>
+      <span class="chip audience">No code, ever</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-5 · Recap</span>
+      <span class="a2" style="flex:5">5-25 · The scoring grid + inventory</span>
+      <span class="a3" style="flex:4">25-40 · Sequencing + your shortlist</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>From a long list to a first bet</h2>
+    </div>
+    <p class="lede">In a1 you mapped your funnel's biggest time-sinks. Tonight you turn that raw list into decisions. The tool is deliberately simple - two axes, value and risk - because a grid a whole team can use beats a model only the leader understands. We score, we inventory the funnel, and we sequence. No code; this is a thinking-mode session with a worksheet.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A scored shortlist of five real AI use-cases, plotted on a value-versus-risk grid, and one deliberate first bet you can defend to your team, your CFO, and your legal partner - chosen because it is high value and low risk, not because it looked impressive in a demo.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE SCORING GRID ============ -->
+  <section class="section" id="scoring-grid">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers 2026 AI-marketing guides + CXL</span>
+      <h2>Value vs risk: the scoring grid <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Every AI use-case gets two scores. <strong>Value</strong> is upside: time saved, output volume, quality lift, and reach. <strong>Risk</strong> is exposure: brand safety, disclosure and legal, and data sensitivity. Plot both on a 2x2 and the map tells you what to do first, what to govern hard, and what to refuse outright.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A value versus risk 2x2 matrix: content drafting and social repurposing are high-value low-risk quick wins; AI images with likeness and automated ad-spend are high-value high-risk big bets to govern; AI fake reviews are illegal and off the map">
+        <defs>
+          <marker id="a2vAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#64748B"/></marker>
+        </defs>
+        <style>
+          .a2vAx { font: 600 13px Inter, sans-serif; fill: #64748B; }
+          .a2vQ { font: 700 14px Inter, sans-serif; fill: #1E293B; }
+          .a2vD { font: 600 12.5px Inter, sans-serif; fill: #1E293B; }
+          .a2vN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="120" y="40" width="640" height="340" rx="10" fill="#FCE7F0"/>
+        <line x1="440" y1="40" x2="440" y2="380" stroke="#CBD5E1" stroke-width="1.5"/>
+        <line x1="120" y1="210" x2="760" y2="210" stroke="#CBD5E1" stroke-width="1.5"/>
+        <line x1="120" y1="410" x2="770" y2="410" stroke="#CBD5E1" stroke-width="2" marker-end="url(#a2vAh)"/>
+        <line x1="90" y1="380" x2="90" y2="30" stroke="#CBD5E1" stroke-width="2" marker-end="url(#a2vAh)"/>
+        <text class="a2vAx" x="120" y="432">Risk: low</text>
+        <text class="a2vAx" x="690" y="432">high</text>
+        <text class="a2vAx" x="60" y="380" transform="rotate(-90 60 380)">Value: low</text>
+        <text class="a2vAx" x="60" y="90" transform="rotate(-90 60 90)">high</text>
+        <text class="a2vQ" x="150" y="66">Quick wins - start here</text>
+        <text class="a2vQ" x="470" y="66">Big bets - govern hard</text>
+        <circle cx="240" cy="110" r="8" fill="#C2185B"/>
+        <text class="a2vD" x="256" y="114">Content drafting</text>
+        <circle cx="230" cy="165" r="8" fill="#C2185B"/>
+        <text class="a2vD" x="246" y="169">Social repurposing</text>
+        <circle cx="560" cy="110" r="8" fill="#8E1246"/>
+        <text class="a2vD" x="576" y="114">AI images w/ likeness</text>
+        <circle cx="620" cy="165" r="8" fill="#8E1246"/>
+        <text class="a2vD" x="500" y="185">Automated ad-spend</text>
+        <rect x="588" y="300" width="172" height="46" rx="10" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="a2vD" x="604" y="322">Fake reviews ✗</text>
+        <text class="a2vD" x="604" y="340" font-weight="400">illegal - never run</text>
+        <rect x="120" y="446" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="a2vN" x="144" y="458">Start top-left. Govern the big bets. Never touch anything illegal, whatever value it seems to promise.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the value-versus-risk map with real marketing use-cases plotted</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why the risk axis is not optional<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Most teams score value instinctively and forget risk until something breaks. The risk axis is what separates a leader's map from a wish-list. It has three parts, and any one of them can move a high-value idea into "govern hard" or "refuse".</p>
+        <ul>
+          <li><strong>Brand safety.</strong> Could the output embarrass the brand, go off-voice, or make a claim you cannot stand behind? Customer-facing beats internal on this axis every time.</li>
+          <li><strong>Disclosure and legal.</strong> Does it need an AI or endorsement disclosure (FTC/ASA)? Is it a comparative or performance claim? Fake reviews and fabricated stats are not high-risk - they are off the map, because they are illegal.</li>
+          <li><strong>Data sensitivity.</strong> Does it touch customer PII, unreleased plans, or contracts? If yes, it only runs in approved tools with consented first-party data - rail two from a1.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          "For each idea, what is the worst realistic headline if this went wrong - and would we survive it?" That single question surfaces the risk score faster than any rubric.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Scoring value and risk 1-5<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Keep it lightweight. Score each use-case 1-5 on value and 1-5 on risk, average the sub-factors, and plot it. Precision is not the point; a shared, comparable score across the team is.</p>
+        <table class="clean">
+          <thead><tr><th>Value (upside)</th><th>Risk (exposure)</th></tr></thead>
+          <tbody>
+            <tr><td>Time saved per week</td><td>Brand safety - could it embarrass us?</td></tr>
+            <tr><td>Output volume unlocked</td><td>Disclosure / legal - claims, endorsements</td></tr>
+            <tr><td>Quality lift over today</td><td>Data sensitivity - PII, unreleased plans</td></tr>
+            <tr><td>Reach or audiences served</td><td>Reversibility - can we undo a mistake?</td></tr>
+          </tbody>
+        </table>
+        <p>High value, low risk goes to the top-left and gets a green light. High value, high risk is a real opportunity you govern hard. Anything illegal - fabricated stats, fake reviews - never gets scored; it is refused.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE INVENTORY ============ -->
+  <section class="section" id="inventory">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the full-funnel 2026 curricula</span>
+      <h2>The use-case inventory across the funnel <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Here is a starting inventory of common AI marketing use-cases with a first-pass value, risk, and verdict. Treat it as a template, not gospel - your data, brand, and market will move some cells. The pattern that emerges is the point: drafting and internal work cluster in quick wins; customer-facing and automated work carries more risk.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The inventory table<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Use-case</th><th>Value</th><th>Risk</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td>Content drafting (blogs, pages)</td><td>High</td><td>Low</td><td>Quick win - start here</td></tr>
+            <tr><td>Ideation (angles, hooks)</td><td>Med-high</td><td>Low</td><td>Quick win</td></tr>
+            <tr><td>SEO / GEO clusters + briefs</td><td>High</td><td>Low-med</td><td>Quick win, verify facts</td></tr>
+            <tr><td>Ad copy variants</td><td>High</td><td>Med</td><td>Go - human sign-off on claims</td></tr>
+            <tr><td>Email sequences</td><td>High</td><td>Med</td><td>Go - consented data only</td></tr>
+            <tr><td>Social repurposing</td><td>High</td><td>Low</td><td>Quick win</td></tr>
+            <tr><td>Image generation</td><td>Med-high</td><td>Med-high</td><td>Govern - IP + likeness</td></tr>
+            <tr><td>Personalization</td><td>High</td><td>Med-high</td><td>Govern - privacy + consent</td></tr>
+            <tr><td>Analytics / read results</td><td>Med</td><td>Low-med</td><td>Go - human interprets</td></tr>
+            <tr><td>Automated ad-spend decisions</td><td>High</td><td>High</td><td>Big bet - guardrails first</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Reading the pattern in the inventory<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Internal and draft-stage work is low-risk.</strong> A blog draft you edit before publishing carries far less exposure than an autonomous decision that spends budget.</li>
+          <li><strong>Customer-facing lifts the risk.</strong> Ad copy, email, and personalization all need a human sign-off and consented data before they scale.</li>
+          <li><strong>Creative and autonomy are the hard end.</strong> AI images raise IP and likeness questions (a3, b8); automated spend decisions are a genuine era-3 bet that needs guardrails and budget caps before you touch them.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          "Where does our inventory disagree with this template - and is that because our risk is genuinely different, or because we are underrating it?" Optimism quietly discounts risk; name it.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: SEQUENCING ============ -->
+  <section class="section" id="sequencing">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the sequencing rule</span>
+      <h2>Sequencing: earn trust before you climb <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">The order you adopt in matters more than the tools you pick. Start where value is high and risk is low and the work is internal or draft-stage. Build a brand-review habit while the stakes are low. Only then move to customer-facing work, and only after that to automated decisions. Each step earns the credibility the next one needs.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 172" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A four-step sequence: start with low-risk drafts, build a brand-review habit, then move to customer-facing work, then to automated bets">
+        <defs>
+          <marker id="a2wAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#CBD5E1"/></marker>
+        </defs>
+        <style>
+          .a2wT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .a2wI { font: 700 14px Inter, sans-serif; fill: #1E293B; }
+          .a2wN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="30" y="34" width="170" height="56" rx="12" fill="#F4A9C7"/>
+        <text class="a2wI" x="48" y="68">Draft, low risk</text>
+        <line x1="205" y1="62" x2="238" y2="62" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#a2wAh)"/>
+        <rect x="243" y="34" width="170" height="56" rx="12" fill="#E24A85"/>
+        <text class="a2wT" x="261" y="68">Brand review</text>
+        <line x1="418" y1="62" x2="451" y2="62" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#a2wAh)"/>
+        <rect x="456" y="34" width="170" height="56" rx="12" fill="#C2185B"/>
+        <text class="a2wT" x="474" y="68">Customer-facing</text>
+        <line x1="631" y1="62" x2="664" y2="62" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#a2wAh)"/>
+        <rect x="669" y="34" width="170" height="56" rx="12" fill="#8E1246"/>
+        <text class="a2wT" x="687" y="68">Automated bets</text>
+        <rect x="30" y="126" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="a2wN" x="54" y="138">Earn trust before you climb - drafts first, then customer-facing, then automated bets.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the adoption sequence: trust and governance grow ahead of autonomy</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why sequence, not sprint<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Teams that leap straight to the flashy use-case usually get burned and then over-correct into a ban. Sequencing avoids both failure modes. It builds a track record that makes the harder bets defensible - to your team, your legal partner, and your board.</p>
+        <ul>
+          <li><strong>Low-risk first builds the muscle.</strong> Drafting and repurposing teach the team to ground, edit, and verify - the same habit every later use-case needs.</li>
+          <li><strong>The brand-review habit is the unlock.</strong> Once "AI drafts, a human owns the claim" is automatic, customer-facing work stops being scary.</li>
+          <li><strong>Automation comes last, with guardrails.</strong> Automated decisions need budget caps, sign-off gates, and a kill switch. Earn them; do not adopt them to look modern.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          "What would we need to see from our first bet - what result and what habit - before we would trust AI with something customer-facing?" Define the graduation criteria before you start.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ EXERCISE ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Exercise</span>
+      <h2>Score five bets and pick your first <span class="tag exercise">◐ 15 min · bring to a3</span></h2>
+    </div>
+    <p class="lede">Use the time-sinks you mapped in a1. No tools - just the grid and honest scores.</p>
+    <ul>
+      <li>Pick <strong>five real candidate use-cases</strong> from your funnel. Include at least one drafting task and one that touches customer data or public claims.</li>
+      <li>Score each 1-5 on <strong>value</strong> (time saved, volume, quality, reach) and 1-5 on <strong>risk</strong> (brand safety, disclosure/legal, data sensitivity).</li>
+      <li>Plot them on the grid. Circle the one in the top-left - high value, low risk - as your candidate <strong>first bet</strong>.</li>
+      <li>For that first bet, write one line on how you would know it worked, and one line on the brand-review habit it should build.</li>
+      <li>Flag any idea that is illegal or off the map (fabricated stats, fake reviews) and strike it - do not score it.</li>
+    </ul>
+    <div class="callout tip">
+      <strong>Questions to ask your team</strong>
+      "If we could only run one of these for the next quarter, which earns the most trust for the least exposure?" That framing usually names the first bet by itself.
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula and vendor documentation. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">2026 AI-marketing guides (Coursiv / Udemy / Great Learning)</span><span class="note">Part 1 &amp; 2 · use-cases across the funnel</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">CXL - AI for B2B marketing (GTM systems, prioritisation)</span><span class="note">Part 1 &amp; 3 · scoring bets, sequencing adoption</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">FTC + ASA guidance on AI, endorsements &amp; disclosure</span><span class="note">Part 1 · the risk axis; full depth in session a3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">GDPR / PDPA + consent for personalization</span><span class="note">Part 1 &amp; 2 · data-sensitivity scoring</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What makes a strong <em>first</em> AI marketing bet?</p>
+      <button class="qopt" type="button">A · The most impressive use-case, even if it is customer-facing and autonomous</button>
+      <button class="qopt" type="button">B · High value, low risk, and draft-stage - like content drafting or repurposing</button>
+      <button class="qopt" type="button">C · Whatever a competitor announced last week</button>
+      <p class="qwhy">Top-left of the grid: high value, low risk, internal or draft-stage. It delivers early wins and builds the brand-review habit every harder bet depends on.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Why score the risk axis, not just value?</p>
+      <button class="qopt" type="button">A · Risk never really matters if the value is high enough</button>
+      <button class="qopt" type="button">B · Legal handles risk, so leaders can ignore it</button>
+      <button class="qopt" type="button">C · Brand, disclosure, and data exposure can turn a high-value idea into one you govern hard or refuse</button>
+      <p class="qwhy">Value alone is a wish-list. Brand safety, disclosure/legal, and data sensitivity decide whether a use-case is a quick win, a governed big bet, or off the map (fabricated stats, fake reviews).</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is the right sequencing for AI adoption in marketing?</p>
+      <button class="qopt" type="button">A · Low-risk drafts → build a brand-review habit → customer-facing → automated decisions</button>
+      <button class="qopt" type="button">B · Start with automated ad-spend to show ambition</button>
+      <button class="qopt" type="button">C · Adopt everything at once so nobody feels left behind</button>
+      <p class="qwhy">Earn trust before you climb. Internal, draft-stage work builds the habit; customer-facing work comes next; automated decisions come last, with guardrails. Each step earns the credibility the next one needs.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Two scores</b><span>score every use-case on value (time, volume, quality, reach) and risk (brand, disclosure/legal, data).</span></div>
+      <div class="cheat-item"><b>The 2x2</b><span>x = risk low→high, y = value low→high. Top-left = quick wins; top-right = big bets to govern.</span></div>
+      <div class="cheat-item"><b>Quick wins</b><span>content drafting, ideation, SEO/GEO briefs, social repurposing - high value, low risk. Start here.</span></div>
+      <div class="cheat-item"><b>Govern hard</b><span>AI images w/ likeness, personalization, automated ad-spend - high value, high risk. Guardrails first.</span></div>
+      <div class="cheat-item"><b>Off the map</b><span>fabricated stats and fake reviews are illegal - never scored, always refused, whatever the value.</span></div>
+      <div class="cheat-item"><b>Risk axis</b><span>brand safety + disclosure/legal (FTC/ASA) + data sensitivity. Customer-facing beats internal on risk.</span></div>
+      <div class="cheat-item"><b>Sequence</b><span>drafts → brand-review habit → customer-facing → automated bets. Earn trust before you climb.</span></div>
+      <div class="cheat-item"><b>Two rails hold</b><span>own the brand + claim (no fabrication, disclose); protect consented first-party data (no PII in consumer tools).</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 2 of 6 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a1-ai-first-marketing.html">← Previous: The AI-first marketing team</a> &nbsp;·&nbsp; <a href="a3-brand-trust-disclosure.html">Next: Brand, trust &amp; disclosure →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 6 · Email &amp; lifecycle - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 6 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 6 of 10</div>
+    <h1>Email &amp; lifecycle: <span class="accent">the right message at the right moment</span></h1>
+    <p class="sub">Paid gets someone in the door; lifecycle email is how you turn them into an active, paying, loyal user. Tonight you map Cadence's journey - signup to activation to upgrade to retention - and draft a welcome sequence AI writes but you own. Then you build a subject-line test. The whole time, one rule holds: personalize with data people actually gave you.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Builder track</span>
+      <span class="chip audience">Practitioners: lifecycle · CRM · growth</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-22 · Lifecycle thinking</span>
+      <span class="a3" style="flex:5">22-42 · Build-along: sequence + subject test</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are in the Cadence campaign</h2>
+    </div>
+    <p class="lede">You have positioning (b2), a content engine (b3), search (b4), and paid ads (b5) bringing people to Cadence. Now what? A signup that never activates is a wasted acquisition. Lifecycle email is the cheapest, most controllable channel you have to move someone from "signed up" to "uses it every day" to "upgraded to Teams". AI can draft every message - but the journey map and the data are yours.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A mapped Cadence lifecycle (signup -> activation -> upgrade -> retention), a drafted 3-email welcome/activation sequence tailored to solo vs Teams, and a subject-line test plan with one variable, one metric, and a decision rule - all built on consented first-party data only.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: LIFECYCLE ============ -->
+  <section class="section" id="lifecycle">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers HubSpot Academy, lifecycle marketing</span>
+      <h2>Lifecycle: the right message at the right moment <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Lifecycle marketing is one idea: <em>meet people where they are</em>. A brand-new signup needs a different message than a power user who has not upgraded. Map the journey, decide what each stage needs to hear, and let a trigger send it at the moment it is relevant. AI drafts the messages; you own the map and the data behind it.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Cadence lifecycle: four stages from signup to retention, each with a trigger and the message it needs, with AI-assist points marked">
+        <style>
+          .b6xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b6xI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b6xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b6xXi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b6xN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+          .b6xL { font: 600 11.5px Inter, sans-serif; fill: #64748B; }
+        </style>
+        <defs>
+          <marker id="b6xAh" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <text class="b6xL" x="25" y="40">STAGE</text>
+        <text class="b6xL" x="25" y="150">TRIGGER + MESSAGE</text>
+        <rect x="25" y="50" width="175" height="70" rx="12" fill="#8E1246"/>
+        <text class="b6xT" x="45" y="80">Signup</text>
+        <text class="b6xX" x="45" y="102">just created account</text>
+        <rect x="250" y="50" width="175" height="70" rx="12" fill="#C2185B"/>
+        <text class="b6xT" x="270" y="80">Activation</text>
+        <text class="b6xX" x="270" y="102">first real value</text>
+        <rect x="475" y="50" width="175" height="70" rx="12" fill="#E24A85"/>
+        <text class="b6xT" x="495" y="80">Upgrade</text>
+        <text class="b6xX" x="495" y="102">solo -&gt; Teams</text>
+        <rect x="700" y="50" width="175" height="70" rx="12" fill="#F4A9C7"/>
+        <text class="b6xI" x="720" y="80">Retention</text>
+        <text class="b6xXi" x="720" y="102">stays active</text>
+        <line x1="205" y1="85" x2="245" y2="85" stroke="#CBD5E1" stroke-width="2" marker-end="url(#b6xAh)"/>
+        <line x1="430" y1="85" x2="470" y2="85" stroke="#CBD5E1" stroke-width="2" marker-end="url(#b6xAh)"/>
+        <line x1="655" y1="85" x2="695" y2="85" stroke="#CBD5E1" stroke-width="2" marker-end="url(#b6xAh)"/>
+        <rect x="25" y="160" width="175" height="76" rx="12" fill="#FCE7F0"/>
+        <text class="b6xXi" x="45" y="186">Welcome + fast</text>
+        <text class="b6xXi" x="45" y="204">first-note win.</text>
+        <text class="b6xXi" x="45" y="222" font-weight="600">AI: draft copy</text>
+        <rect x="250" y="160" width="175" height="76" rx="12" fill="#FCE7F0"/>
+        <text class="b6xXi" x="270" y="186">Nudge to record</text>
+        <text class="b6xXi" x="270" y="204">a real meeting.</text>
+        <text class="b6xXi" x="270" y="222" font-weight="600">AI: draft nudge</text>
+        <rect x="475" y="160" width="175" height="76" rx="12" fill="#FCE7F0"/>
+        <text class="b6xXi" x="495" y="186">Show a Teams</text>
+        <text class="b6xXi" x="495" y="204">benefit at value.</text>
+        <text class="b6xXi" x="495" y="222" font-weight="600">AI: draft offer</text>
+        <rect x="700" y="160" width="175" height="76" rx="12" fill="#FCE7F0"/>
+        <text class="b6xXi" x="720" y="186">Re-engage if</text>
+        <text class="b6xXi" x="720" y="204">usage drops.</text>
+        <text class="b6xXi" x="720" y="222" font-weight="600">AI: draft win-back</text>
+        <rect x="25" y="290" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b6xN" x="49" y="302">You own the map and the data; AI drafts the message. Every trigger fires on consented first-party data.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the Cadence lifecycle: stage, trigger, message, and where AI helps</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Map the journey before you write a word<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The mistake is writing emails first. Map the journey first: what stage is the person in, what do they need to do next, and what message moves them there. Then a "trigger" - an event like "signed up" or "recorded first meeting" - sends the right message automatically.</p>
+        <ul>
+          <li><strong>Signup -&gt; activation.</strong> The riskiest gap. Someone signed up but has not felt the value yet. Get them to their first real win fast (for Cadence: notes from a real meeting).</li>
+          <li><strong>Activation -&gt; upgrade.</strong> Once they get value on the free solo plan, show the Teams benefit at the moment it is relevant - not on day one.</li>
+          <li><strong>Retention.</strong> Keep active users active; re-engage the ones going quiet before they churn.</li>
+          <li><strong>You own the strategy and the data; AI drafts the copy.</strong> The model does not know your funnel - you do.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The lifecycle question</strong>
+          For every email, ask: "What stage is this person in, and what is the one next step?" If you cannot answer, the email is not ready to write.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Triggers vs blasts<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>A blast</strong> goes to everyone at once - fine for a genuine announcement, weak for moving people through a journey.</li>
+          <li><strong>A triggered email</strong> fires on an event or delay ("2 days after signup with no meeting recorded"), so it lands when it is relevant.</li>
+          <li><strong>Lifecycle is mostly triggered.</strong> The value is relevance: the right message at the right moment beats the same message to everyone.</li>
+          <li><strong>AI helps design the trigger logic too</strong> - ask it to propose triggers for each stage - but you validate them against your real product events.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: SEGMENTATION + PERSONALIZATION ============ -->
+  <section class="section" id="segmentation">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers HubSpot personalization + the privacy rail</span>
+      <h2>Segmentation + personalization without the creep <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Personalization works when it feels helpful and fails when it feels like surveillance. AI can help you segment by stage, behavior, and persona and tailor each message - but only on data people consented to share. Cadence solo and Cadence Teams are different audiences with different needs, and that is where good segmentation starts.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Segment by stage and persona, personalize with consent<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Good segmentation is about relevance, not data hoarding. Split by where someone is (stage), what they have done (behavior), and who they are (persona: solo user vs team admin). Then tailor the message - and use only consented first-party data to do it.</p>
+        <table class="clean">
+          <thead><tr><th>Segment</th><th>Message angle</th></tr></thead>
+          <tbody>
+            <tr><td>New signup, no meeting yet (solo)</td><td>Get to your first automatic note fast - here is the one step</td></tr>
+            <tr><td>Active solo user, not upgraded</td><td>You are getting value alone; here is what Cadence does for a whole team</td></tr>
+            <tr><td>Team admin evaluating Teams</td><td>One shared source of truth for decisions and action items</td></tr>
+            <tr><td>Was active, now quiet</td><td>Gentle re-engage: what you missed, one reason to come back</td></tr>
+          </tbody>
+        </table>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The personalization that crossed the line.</strong> A brand referenced behavior a user never agreed to share, and the "helpful" email read as creepy - unsubscribes spiked. Personalization built on non-consented data is not just a legal risk under GDPR/PDPA, it damages trust. Consent first, always.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Rail two for email - the consent checklist<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Consented first-party data only.</strong> Personalize with what people gave you, for the purpose they agreed to - not scraped or inferred data.</li>
+          <li><strong>Respect GDPR and PDPA.</strong> Clear opt-in, easy opt-out, honour unsubscribes immediately.</li>
+          <li><strong>Never paste customer PII into a consumer AI tool.</strong> Draft with placeholders ([first name], [company]); the real merge happens in your ESP.</li>
+          <li><strong>The comfort test.</strong> "Would this personalization feel helpful or creepy to the person receiving it?" If creepy, do not send it.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: SUBJECT LINES + TESTING ============ -->
+  <section class="section" id="subject-lines">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the small lever with the biggest reach</span>
+      <h2>Subject lines + testing <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">The subject line decides whether any of your work gets read. AI generates variants in seconds - the discipline is the same as paid: test one thing, pick one metric, respect deliverability. No spammy tricks that get you opened once and filtered forever.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Generate variants, test one thing, protect deliverability<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Generate widely.</strong> Ask AI for ten subject-line variants in different styles: benefit, curiosity, specific, short.</li>
+          <li><strong>Test narrowly.</strong> Pick two, change only the subject line, keep the email body identical, measure open rate.</li>
+          <li><strong>Respect deliverability.</strong> No all-caps, no "FREE!!!", no fake "Re:" tricks. A subject that beats the spam filter matters more than one that wins a single test.</li>
+          <li><strong>Watch the whole funnel.</strong> A high open rate that does not lead to the next step is a vanity win - tie it back to activation or upgrade.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Same discipline as paid</strong>
+          One variable, one metric, a decision rule set in advance. Subject-line tests are A/B tests - treat them with the b5 rigour, not gut feel.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Deliverability quick rules<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Avoid spam triggers.</strong> Excessive caps, exclamation marks, and money words push you toward the spam folder.</li>
+          <li><strong>Be honest.</strong> The subject must match the email. Clickbait that misleads trains people to ignore you.</li>
+          <li><strong>Send to people who want it.</strong> Clean your list; high bounce and complaint rates hurt every future send.</li>
+          <li><strong>Test length and personalization.</strong> Short vs descriptive, [first name] vs none - but change one at a time.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Draft the Cadence welcome/activation sequence <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Build a 3-email welcome and activation sequence from the positioning brief, tailored to solo vs Teams. AI drafts every email; you own the journey logic and keep it consent-safe with placeholders, not real PII.</p>
+
+    <div class="steps">
+      <div class="step"><p>Open any chat AI. Paste your Cadence positioning brief and the lifecycle map: signup -&gt; activation, and the one next step at each stage.</p></div>
+      <div class="step"><p>Ask for a <strong>3-email sequence</strong>: (1) welcome + fastest first win, (2) activation nudge to record a real meeting, (3) show the value they are getting and hint at Teams.</p></div>
+      <div class="step"><p>Ask for <strong>two variants of the sequence</strong>: one for a solo user, one for a team admin - same journey, different emphasis.</p></div>
+      <div class="step"><p>Use placeholders only: [first name], [company]. No real customer data goes into the chat tool (rail two).</p></div>
+      <div class="step"><p>Edit for voice and truth. Cut any claim you cannot back; the model does not know your product numbers.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">Prompt A - ungrounded (generic + risky)</span>Write me a welcome email sequence for a note-taking app. Make it convert and personalize it with the user's data.</div>
+
+    <div class="prompt-box good"><span class="label">★ Prompt B - grounded (a real activation sequence)</span>Draft a 3-email welcome + activation sequence. Use ONLY these facts.
+Product: Cadence, an AI note-taker. Value: notes + action items are drafted the
+moment a call ends. Offers: free solo plan; paid Teams plan.
+Journey: signup -> activation (first real meeting recorded) -> hint at Teams.
+
+Emails:
+1. Welcome + the single fastest step to a first automatic note.
+2. Activation nudge: encourage recording one real meeting; make the payoff clear.
+3. Show the value they are getting solo, then a soft hint at what Teams adds.
+
+Give me TWO tailored versions: one for a SOLO user, one for a TEAM ADMIN - same
+journey, different emphasis. Use placeholders [first name] and [company] only; do
+not invent statistics or reviews. Keep it in a warm, plain voice.</div>
+
+    <div class="callout tip">
+      <strong>Why the sequence comes first</strong>
+      A welcome sequence runs for every new Cadence user forever. Getting activation right here compounds - it is the highest-leverage email you will ever write for this campaign.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Subject-line variants + a simple A/B test plan <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Generate a batch of subject-line variants for the welcome email, then structure a clean test: one variable, one metric, one decision rule. Same rigour as the paid test in b5.</p>
+
+    <div class="steps">
+      <div class="step"><p>Take the welcome email from demo 1. Ask AI for <strong>eight subject-line variants</strong> across styles: benefit, curiosity, specific, short.</p></div>
+      <div class="step"><p>Screen them for deliverability: cut anything with all-caps, excess punctuation, or a misleading promise.</p></div>
+      <div class="step"><p>Pick <strong>two that differ in one dimension</strong> - for example, benefit vs curiosity - keeping the email body identical.</p></div>
+      <div class="step"><p>Choose <strong>one metric</strong>: open rate to test the subject itself, or click/activation if you care about the whole funnel.</p></div>
+      <div class="step"><p>Write the <strong>decision rule</strong> before sending: what open-rate margin makes you keep the winner, and how big a send you need first.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The subject-line test prompt</span>Here is my welcome email: [paste].
+1. Give me 8 subject-line variants across styles: benefit, curiosity, specific,
+   short. Keep them honest - the subject must match the email.
+2. Flag any that risk deliverability (all-caps, excess punctuation, spammy words).
+3. Recommend TWO to A/B test that differ in ONE dimension only, and name that
+   dimension.
+4. Draft a decision rule: "If B beats A on open rate by [margin] after [sample
+   size], use B." Leave the numbers as blanks for me to set.
+
+Do not add fake urgency or claims not supported by the email body.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The subject line that opened but never converted.</strong> A team picked the highest open-rate subject and celebrated - but it was a curiosity gap that oversold, and almost no one took the next step. When they tied the test to activation instead of opens, a plainer, honest subject won. Match the metric to the goal, not to the ego.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both tailored welcome sequences (solo and Teams) if you did not complete them live, editing every line for voice and truth.</li>
+      <li>Map one more stage of the Cadence lifecycle - the upgrade or the retention/win-back moment - and draft the trigger and message for it.</li>
+      <li>Build a subject-line A/B plan for one real email you send: one variable, one metric matched to the goal, a written decision rule.</li>
+      <li>Run the consent check on your own email program: is every personalization built on data people agreed to share? Note any gap.</li>
+      <li>Draft your emails with placeholders only. Confirm the real merge happens in your ESP, never in a consumer AI tool.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula and vendor documentation. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">HubSpot Academy - email &amp; lifecycle marketing</span><span class="note">Parts 1-2 · journey mapping, triggers, segmentation</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">HubSpot Academy - AI for email + subject-line testing</span><span class="note">Part 3 + Demo 2 · variants, A/B, deliverability</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">GDPR / PDPA + consent for personalization</span><span class="note">Part 2 · rail two; full depth in leader session a3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Email deliverability &amp; anti-spam guidance</span><span class="note">Part 3 · honest subjects, list hygiene, sourced in the course map</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · What is the core idea of lifecycle email?</p>
+      <button class="qopt" type="button">A · Send the same great email to your whole list often</button>
+      <button class="qopt" type="button">B · Collect as much data as possible on every subscriber</button>
+      <button class="qopt" type="button">C · Send the right message at the right moment for the stage someone is in</button>
+      <p class="qwhy">Lifecycle is about relevance: map the journey (signup -> activation -> upgrade -> retention), decide what each stage needs, and trigger that message when it matters. AI drafts it; you own the map.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · You want to personalize a Cadence email. What data is acceptable to use?</p>
+      <button class="qopt" type="button">A · Consented first-party data, used for the purpose people agreed to</button>
+      <button class="qopt" type="button">B · Any behavior you can infer or scrape, if it makes the email more relevant</button>
+      <button class="qopt" type="button">C · Whatever is in the CRM, no need to check consent</button>
+      <p class="qwhy">Rail two. Personalize only with consented first-party data under GDPR/PDPA, and never paste customer PII into a consumer AI tool - draft with placeholders. Helpful, not creepy.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · You are A/B testing a subject line. What is the discipline?</p>
+      <button class="qopt" type="button">A · Change subject, sender, and send-time together to find a winner faster</button>
+      <button class="qopt" type="button">B · Change one thing, pick one metric matched to the goal, set a decision rule</button>
+      <button class="qopt" type="button">C · Use the most exciting all-caps subject to guarantee opens</button>
+      <p class="qwhy">Subject-line tests are A/B tests: one variable, one metric, a decision rule set in advance - and no spammy tricks that hurt deliverability. Match the metric to the goal, not to opens alone.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 6 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Lifecycle idea</b><span>the right message at the right moment for the stage someone is in. Relevance beats volume.</span></div>
+      <div class="cheat-item"><b>Map first</b><span>signup -> activation -> upgrade -> retention. Decide the one next step per stage before writing.</span></div>
+      <div class="cheat-item"><b>Triggers, not blasts</b><span>fire on an event or delay so the message lands when it is relevant. AI can propose the logic.</span></div>
+      <div class="cheat-item"><b>Segment</b><span>by stage, behavior, and persona - solo user vs team admin need different emphasis.</span></div>
+      <div class="cheat-item"><b>Rail 2 - consent</b><span>consented first-party data only; GDPR/PDPA; no PII in consumer tools - draft with placeholders.</span></div>
+      <div class="cheat-item"><b>The comfort test</b><span>would this personalization feel helpful or creepy? If creepy, do not send it.</span></div>
+      <div class="cheat-item"><b>Subject lines</b><span>generate widely, test one dimension, protect deliverability - no all-caps or fake "Re:" tricks.</span></div>
+      <div class="cheat-item"><b>Test discipline</b><span>one variable · one metric matched to the goal · a decision rule set before you send.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 6 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b5-paid-ads-creative.html">← Previous: Paid ads &amp; creative</a> &nbsp;·&nbsp; <a href="b7-social-short-form.html">Next: Social &amp; short-form →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

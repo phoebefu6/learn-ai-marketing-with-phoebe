@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 9 · Analytics & optimization - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 9 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 9 of 10</div>
+    <h1>Analytics &amp; optimization: <span class="accent">read the numbers, design the next test</span></h1>
+    <p class="sub">The Cadence campaign is live and the dashboards are filling up. Tonight you turn AI into an analysis co-pilot: paste the metrics you gathered, get a clean readout of what worked and what did not, then design one sharp next experiment. The discipline underneath: AI helps you see patterns and draft the story, but it never sources the numbers and never decides the spend - that stays with you.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Builder track</span>
+      <span class="chip audience">Practitioners: growth · analytics · lifecycle</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-21 · AI as an analysis co-pilot</span>
+      <span class="a3" style="flex:5">21-42 · Build-along: readout + next test</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where this sits</h2>
+    </div>
+    <p class="lede">You have built the Cadence campaign end to end - positioning, content, SEO, ads, email, social, and creative. Now it runs, and the question shifts from "what should we make?" to "what did it do, and what do we try next?" AI is genuinely useful here as a fast, patient analyst: it summarizes, spots patterns, and drafts the readout in your voice. It is also exactly where over-trust bites - so we keep b1's first rail front and centre: the model is not the source of truth for a single figure.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      An AI-assisted readout of the Cadence campaign - what worked, what did not, and the caveats - plus a clean next-experiment design (hypothesis, one variable, metric, decision rule) you can run next week. Note: deep multi-touch attribution modeling is the sibling course <em>learn-marketing-attribution-with-phoebe</em>. Here we read results and design experiments; we do not build attribution models.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: AI AS ANALYSIS CO-PILOT ============ -->
+  <section class="section" id="co-pilot">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Harvard DCE predictive analytics (reading, not modeling)</span>
+      <h2>AI as an analysis co-pilot <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Think of AI as a sharp junior analyst who reads fast and never gets bored - but who has no access to your accounts. You supply the numbers; it summarizes them, surfaces patterns, and drafts the readout. It does two things it must never do: source the figures itself, and decide where the money goes. Keep those two off its desk and it earns its seat.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The readout pipeline: metrics you supply flow into an AI that summarizes and spots patterns, then a human decides the spend - AI never sources the numbers and never decides the budget">
+        <defs>
+          <marker id="b9xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <style>
+          .b9xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b9xI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b9xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b9xXi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b9xN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="30" y="60" width="210" height="120" rx="12" fill="#C2185B"/>
+        <text class="b9xT" x="52" y="98">Metrics you supply</text>
+        <text class="b9xX" x="52" y="122">CTR, CPA, conversions,</text>
+        <text class="b9xX" x="52" y="140">opens, spend - copied</text>
+        <text class="b9xX" x="52" y="158">from the platform</text>
+        <line x1="244" y1="120" x2="330" y2="120" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b9xAh)"/>
+        <rect x="335" y="60" width="210" height="120" rx="12" fill="#E24A85"/>
+        <text class="b9xT" x="357" y="98">AI reads + patterns</text>
+        <text class="b9xX" x="357" y="122">summarizes, spots what</text>
+        <text class="b9xX" x="357" y="140">moved, drafts the readout</text>
+        <text class="b9xX" x="357" y="158">- never sources numbers</text>
+        <line x1="549" y1="120" x2="635" y2="120" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b9xAh)"/>
+        <rect x="640" y="60" width="210" height="120" rx="12" fill="#F4A9C7"/>
+        <text class="b9xI" x="662" y="98">You decide</text>
+        <text class="b9xXi" x="662" y="122">the spend + next move -</text>
+        <text class="b9xXi" x="662" y="140">AI advises, it never</text>
+        <text class="b9xXi" x="662" y="158">decides the budget</text>
+        <rect x="30" y="256" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b9xN" x="54" y="268">AI reads the numbers you supply and verify; it never sources them and never decides the spend.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the readout pipeline: you supply and verify, AI summarizes, you decide</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>What a good AI readout gives you - and what it must not<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Paste a small, clean metrics table and a good prompt turns it into a story a human can act on: the headline, the two or three things that moved, and the honest caveats. That is real leverage - it is the "restructure and reason over my brief" strength from b1, pointed at numbers instead of copy.</p>
+        <ul>
+          <li><strong>Summarize + prioritize.</strong> Which channel, ad, or subject line pulled its weight, and which quietly burned budget. AI is fast at ranking and grouping.</li>
+          <li><strong>Spot patterns you would miss.</strong> "Opens are strong but clicks collapse on mobile" is the kind of cross-cut it surfaces in seconds.</li>
+          <li><strong>Draft the readout in your voice.</strong> A tidy paragraph plus a bullet list your stakeholders can read - not a wall of raw rows.</li>
+          <li><strong>But it must not source figures.</strong> If a number is not in what you pasted, the answer is "[need data]", never an invented one. This is b1's first rail, in the analytics chair.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI)</span>Here are last week's Cadence email numbers (I am supplying them; use only these): sent 4,200; opens 1,510; clicks 190; signups 34. Summarize what stands out in three bullets, and if you need a figure I did not give you, write "[need data]" instead of guessing.</div>
+        <div class="callout tip">
+          <strong>The one rule that keeps this safe</strong>
+          Every figure in the readout must trace back to something you pasted, which traces back to the platform. If AI produces a number you did not supply, treat it as fabricated until you verify it in the source dashboard.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Bring your own numbers - AI has no dashboard<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A chat AI cannot see your Google Ads, Meta, HubSpot, or GA4 account. It only knows what you paste. That is a feature: it forces you to pull real figures from the source of truth before the conversation starts, and it keeps the analysis grounded exactly like b1's slop-vs-grounded demo.</p>
+        <table class="clean">
+          <thead><tr><th>AI is good at (once you supply data)</th><th>Only your platform can do</th></tr></thead>
+          <tbody>
+            <tr><td>Summarizing a metrics table into a readout</td><td>Report the actual numbers - the source of truth</td></tr>
+            <tr><td>Ranking channels and flagging outliers</td><td>Attribute a conversion to a touchpoint</td></tr>
+            <tr><td>Drafting stakeholder-ready commentary</td><td>Confirm spend, budget caps, and pacing</td></tr>
+            <tr><td>Suggesting what to test next</td><td>Run the test and record the result</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: READOUT TO NEXT EXPERIMENT ============ -->
+  <section class="section" id="next-experiment">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the growth loop that compounds</span>
+      <h2>From readout to next experiment <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">A readout that ends in "interesting" is wasted. The point of reading results is to earn the next test. Every signal in the readout hints at a hypothesis; a good experiment turns one hypothesis into a clean test that changes exactly one variable. AI is great at drafting a dozen hypotheses fast - you prioritize the one worth a week.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The growth loop: read results, form a hypothesis, run one clean test, then read again - AI drafts, you prioritize which test to run">
+        <defs>
+          <marker id="b9yAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <style>
+          .b9yT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b9yI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b9yX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b9yXi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b9yN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="30" y="40" width="185" height="96" rx="12" fill="#8E1246"/>
+        <text class="b9yT" x="50" y="80">Read results</text>
+        <text class="b9yX" x="50" y="102">the AI-assisted</text>
+        <text class="b9yX" x="50" y="120">readout</text>
+        <line x1="219" y1="88" x2="290" y2="88" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b9yAh)"/>
+        <rect x="295" y="40" width="185" height="96" rx="12" fill="#C2185B"/>
+        <text class="b9yT" x="315" y="80">Form hypothesis</text>
+        <text class="b9yX" x="315" y="102">AI drafts many,</text>
+        <text class="b9yX" x="315" y="120">you pick one</text>
+        <line x1="484" y1="88" x2="555" y2="88" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b9yAh)"/>
+        <rect x="560" y="40" width="185" height="96" rx="12" fill="#E24A85"/>
+        <text class="b9yT" x="580" y="80">Run one test</text>
+        <text class="b9yX" x="580" y="102">change one variable,</text>
+        <text class="b9yX" x="580" y="120">set a decision rule</text>
+        <path d="M652,140 L652,190 L124,190 L124,140" fill="none" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b9yAh)"/>
+        <text class="b9yXi" x="300" y="184">loop back: the result becomes next week's readout</text>
+        <rect x="30" y="214" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b9yN" x="54" y="226">One variable per test - change two and you will not know which one moved the metric.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the growth loop: read, hypothesize, test one thing, read again</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Turn a signal into a clean, one-variable test<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A clean experiment has four parts and one discipline. The four parts: a hypothesis (if we change X, metric Y improves because Z), the one variable you change, the single metric that decides it, and the decision rule you set <em>before</em> you look. The discipline: change one thing at a time, so the result actually teaches you something.</p>
+        <table class="clean">
+          <thead><tr><th>Signal in the readout</th><th>Experiment it suggests (one variable)</th></tr></thead>
+          <tbody>
+            <tr><td>Strong opens, weak clicks on the Cadence email</td><td>Test the CTA wording only; hold subject + body constant</td></tr>
+            <tr><td>Ad A beats Ad B on CTR but not signups</td><td>Test the landing-page hero only, same ads and audience</td></tr>
+            <tr><td>Teams-plan page converts far below solo plan</td><td>Test one proof point on the Teams page, nothing else</td></tr>
+            <tr><td>Mobile signups lag desktop badly</td><td>Test the mobile form length only, desktop untouched</td></tr>
+          </tbody>
+        </table>
+        <div class="prompt-box good"><span class="label">★ Try it now - draft hypotheses to prioritize</span>Given this readout (paste yours), draft five one-variable experiments for the Cadence campaign. For each: the hypothesis, the single variable changed, the metric that decides it, and a suggested decision rule. Rank them by likely impact vs effort - I will pick which one we run.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The test that proved nothing.</strong> A team changed the subject line, the send time, and the offer in one email "to move faster". It won - and they had no idea why, so they could not repeat it. The next three "copies" of that win flopped. One variable at a time is slower for a week and far faster over a quarter.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: GUARDRAILS ============ -->
+  <section class="section" id="guardrails">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the rails, applied to analytics</span>
+      <h2>Guardrails: verify, assist-not-decide, correlation is not cause <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Analytics is where a confident AI does the most quiet damage, because numbers feel objective. Three guardrails keep the co-pilot honest.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Verify every figure, and let AI advise not decide the spend<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Two habits carry most of the risk. First, every number that reaches a stakeholder is checked against the platform - the dashboard is the source of truth, not the chat window. Second, AI can recommend where to shift budget, but a human signs off on the move. That is b1's rail, worded for a growth team: <strong>AI assists, you decide the spend.</strong></p>
+        <ul>
+          <li><strong>Verify at the source.</strong> Re-open the dashboard and confirm the figures the AI summarized. A transposed digit in your paste becomes a wrong decision.</li>
+          <li><strong>Assist, do not decide.</strong> "Shift 20% from Ad B to Ad A" is a recommendation to weigh, not an instruction to execute. Money moves on human sign-off.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Watch for over-confident causal claims<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>AI will happily say "the new subject line caused the lift" from two weeks of data. Often it is a coincidence, a seasonal bump, or something else that moved at the same time. Correlation is not causation, and a co-pilot that forgets this will talk you into repeating flukes.</p>
+        <ul>
+          <li><strong>Ask for the caveat.</strong> A good readout names what could explain the change besides your test - seasonality, a price change, a PR spike.</li>
+          <li><strong>Causal certainty needs a real experiment.</strong> A clean A/B test earns a causal claim; a before-and-after glance does not.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Prompt the humility in</strong>
+          End your readout prompts with "flag anything besides our change that could explain this, and say where the data is too thin to draw a conclusion". You get analysis, not overconfidence. Deep attribution - untangling which touchpoint truly drove the sale - is the sibling course <em>learn-marketing-attribution-with-phoebe</em>.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>AI-assisted readout of the Cadence campaign <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Give AI a small, supplied Cadence metrics table and turn it into a structured readout you would send a stakeholder - what worked, what did not, and the honest caveats. Then you verify every figure. This is the whole session in one build.</p>
+
+    <div class="steps">
+      <div class="step"><p>Open any chat AI. Use the supplied Cadence numbers below (or paste your own real figures - never customer PII, rail two). You are the source of every number.</p></div>
+      <div class="step"><p>Ask for a structured readout: a one-line headline, "what worked", "what did not", and "caveats + what I cannot conclude yet". Require a "[need data]" tag for anything you did not supply.</p></div>
+      <div class="step"><p>Read it critically. Does every figure trace back to your table? Is any claim more confident than two weeks of data allows? Push back in the chat and ask it to soften over-reaches.</p></div>
+      <div class="step"><p><strong>Verify.</strong> Pick three figures from the readout and confirm them against the numbers you pasted (and, in real life, the platform). This step is non-negotiable.</p></div>
+      <div class="step"><p>Save the readout. It becomes the input to demo 2, and the template you reuse every reporting cycle.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The readout prompt (supplied Cadence numbers)</span>You are my analytics co-pilot. Use ONLY the figures I supply below - do not add or estimate any number. If you need a figure I did not give, write "[need data]".
+
+Cadence campaign, last 14 days:
+- Blog + SEO: 6,400 visits, 512 free signups
+- Paid ads: spend $3,000, 1,900 clicks, 141 free signups
+- Email nurture: 4,200 sent, 1,510 opens, 190 clicks, 34 Teams-plan trials
+- Social: 22,000 impressions, 610 clicks, 48 free signups
+
+Write a stakeholder readout: one-line headline, "what worked", "what did not",
+and "caveats + what we cannot conclude yet". Flag anything besides our own work
+that could explain a change, and do not claim causation from this data alone.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The readout that caught a typo.</strong> A marketer pasted a metrics table, got a crisp readout, then ran the verify step - and found she had dropped a zero on ad spend. The AI had faithfully summarized a wrong number into a confident (and wrong) conclusion. The tool did its job; the verify step did the rest. Garbage in, confident garbage out.</p>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Design the next experiment <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Take the readout from demo 1 and turn its strongest signal into one clean test you could launch next week. Four parts, one variable, one decision rule set before you look.</p>
+
+    <div class="steps">
+      <div class="step"><p>Point AI at your readout and ask for five one-variable experiments, ranked by impact vs effort. Let it draft; you are the one who prioritizes.</p></div>
+      <div class="step"><p>Pick one. Sharpen it into the four parts: <em>hypothesis</em> (if we change X, Y improves because Z), the <em>one variable</em>, the <em>deciding metric</em>, and the <em>decision rule</em> (e.g. "ship the variant if signups rise 15%+ with enough sample").</p></div>
+      <div class="step"><p>Pressure-test that exactly one thing changes. If your "test" also moves the audience, the offer, or the timing, split it - you would not learn which lever worked.</p></div>
+      <div class="step"><p>Write the one-line plan: variable, metric, rule, and how long it runs. That is a runnable experiment, and the loop that will make the next campaign better than this one.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The next-experiment prompt</span>Here is my Cadence readout (paste demo 1 output). Its strongest signal is [name it].
+
+Design ONE clean experiment from it. Give me:
+1) Hypothesis: if we change X, metric Y improves because Z.
+2) The single variable we change (everything else held constant).
+3) The one metric that decides it.
+4) A decision rule set before we look at results.
+5) How long to run it and roughly how much traffic we need to trust the result.
+
+Keep it to one variable. If my idea secretly changes more than one thing, split it and tell me.</div>
+
+    <div class="callout tip">
+      <strong>Why demo 2 matters most</strong>
+      A readout tells you about last week; an experiment earns you a better next week. This loop - read, hypothesize, test one thing, read again - is how a good campaign compounds instead of just running.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Pull one real metrics table from a channel you run (no PII) and generate an AI readout. Then run the verify step and note any figure that did not match.</li>
+      <li>Turn the readout's strongest signal into one clean, one-variable experiment with a decision rule written before you look.</li>
+      <li>Find one place your AI readout claimed causation from thin data. Rewrite that line as an honest caveat - practise catching over-confidence.</li>
+      <li>Save your readout prompt and your experiment template as reusable snippets. You will use them every reporting cycle.</li>
+      <li>Optional: skim the sibling course <em>learn-marketing-attribution-with-phoebe</em> if you want the deep "which touchpoint really drove the sale" layer under tonight's reading.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula and vendor documentation. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Harvard DCE - AI Marketing: predictive analytics (CLV / churn)</span><span class="note">Parts 1-2 · reading results, patterns, experiment design (reading, not modeling)</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">2026 AI-marketing guides - analytics + optimization module</span><span class="note">Part 1-2 · AI co-pilot readouts, the test-and-learn loop</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">b1 rails, applied to analytics</span><span class="note">Part 3 · verify every figure; AI assists, you decide the spend</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Deep multi-touch / marketing-mix attribution</span><span class="note">Not here by design → sibling course learn-marketing-attribution-with-phoebe</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Your AI readout includes a conversion-rate figure you do not remember pasting. What do you do?</p>
+      <button class="qopt" type="button">A · Trust it - the model read the table carefully</button>
+      <button class="qopt" type="button">B · Include it but add "approximately"</button>
+      <button class="qopt" type="button">C · Treat it as fabricated until you verify it against the platform</button>
+      <p class="qwhy">AI is a co-pilot, not the source of truth. Any figure you did not supply is unverified - confirm it in the dashboard before it reaches a stakeholder. This is b1's first rail in the analytics chair.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · You have a solid readout. What is the point of it?</p>
+      <button class="qopt" type="button">A · To file it and move on - the campaign is already live</button>
+      <button class="qopt" type="button">B · To earn the next experiment - turn a signal into one clean, one-variable test</button>
+      <button class="qopt" type="button">C · To prove the campaign worked</button>
+      <p class="qwhy">Reading results is only half the loop. The readout's job is to surface a signal you turn into a hypothesis and a one-variable test, so the next cycle beats this one. Read, hypothesize, test, read again.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · AI recommends shifting 20% of budget from Ad B to Ad A. What is the right move?</p>
+      <button class="qopt" type="button">A · Weigh it as advice, then a human signs off before any money moves</button>
+      <button class="qopt" type="button">B · Execute it - the data supports it</button>
+      <button class="qopt" type="button">C · Ignore it - AI cannot see spend</button>
+      <p class="qwhy">AI assists, you decide the spend. A budget recommendation is input to a human decision, not an instruction to execute. Money moves on human sign-off, every time.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 9 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>AI's analytics role</b><span>a fast analyst with no dashboard - it summarizes, ranks, and drafts the readout from numbers you supply.</span></div>
+      <div class="cheat-item"><b>Bring your own numbers</b><span>a chat AI cannot see your accounts. Paste real figures from the source of truth; that keeps analysis grounded.</span></div>
+      <div class="cheat-item"><b>Never sources figures</b><span>anything the model produces that you did not supply is fabricated until verified. Require a "[need data]" tag.</span></div>
+      <div class="cheat-item"><b>The readout shape</b><span>headline → what worked → what did not → caveats + what you cannot conclude yet.</span></div>
+      <div class="cheat-item"><b>The growth loop</b><span>read results → form a hypothesis → run one clean test → read again. That is how a campaign compounds.</span></div>
+      <div class="cheat-item"><b>One variable</b><span>change one thing per test, set the decision rule before you look, or you will not know what moved the metric.</span></div>
+      <div class="cheat-item"><b>Assist, not decide</b><span>AI recommends where budget could shift; a human signs off. AI assists, you decide the spend.</span></div>
+      <div class="cheat-item"><b>Correlation ≠ cause</b><span>make AI flag other explanations; a clean A/B test earns a causal claim, a before-after glance does not.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 9 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b8-creative-visuals.html">← Previous: Creative &amp; visuals with AI</a> &nbsp;·&nbsp; <a href="b10-governance-brand-safety.html">Next: Governance, brand safety &amp; scaling →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

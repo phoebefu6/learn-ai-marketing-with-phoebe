@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 5 · Measuring what matters - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Leader session 5 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Leader track · Session 5 of 6</div>
+    <h1>Measuring what matters: <span class="accent">efficiency is not the win</span></h1>
+    <p class="sub">AI makes marketing production almost free, so the tempting scoreboard is volume: more posts, more variants, more emails. That is the trap. This session separates efficiency (cheaper inputs) from effectiveness (real outcomes), names the content-sludge and vanity-metric failure modes, and gives you a pilot-to-scale path and a one-page business case you can take to a board. Warm, honest, no code.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Leader track</span>
+      <span class="chip audience">Leaders: CMO · growth leadership</span>
+      <span class="chip audience">No code, ever</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Efficiency vs effectiveness</span>
+      <span class="a3" style="flex:4">18-33 · Pilot, scale, buy vs build</span>
+      <span class="a4" style="flex:3">33-45 · The business case</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>What this session decides</h2>
+    </div>
+    <p class="lede">You have mapped the use cases (a2), set the brand and disclosure guardrails (a3), and shaped the team (a4). Now the question every executive will ask you: <strong>is this working, and how do we know?</strong> The honest answer is not "we made 4x more content". It is a small number of outcomes that moved, measured against a cost and a risk you can defend. Tonight you build the argument that unlocks budget without overselling.</p>
+    <div class="legend">
+      <span class="pill solid">Live - discussed in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A clear efficiency-vs-effectiveness scoreboard your team can agree on, a pilot-to-scale path for one channel with a real decision gate, a buy / build / blend view of your tool choices, and a first draft of an AI-marketing business-case one-pager you carry into the roadmap session a6.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: EFFICIENCY VS EFFECTIVENESS ============ -->
+  <section class="section" id="efficiency-effectiveness">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the Wharton marketing-ROI lens</span>
+      <h2>Efficiency vs effectiveness - do not count output <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">AI collapses the cost of producing marketing content. That is efficiency, and it is real. But efficiency is an input, not a result. The failure mode is mistaking more output for better outcomes - and then reporting the output as if it were the win. Effectiveness is what actually moved: pipeline, conversions, retention, brand lift.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ROI bridge from efficiency to effectiveness: cheaper faster inputs cross a bridge to real outcomes - pipeline, conversions, retention, brand lift - which minus cost and brand risk equals net value; the trap is counting output as outcome">
+        <defs>
+          <marker id="a5xAh" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L7,3 L0,6 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <style>
+          .a5xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .a5xI { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .a5xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .a5xM { font: 400 12.5px Inter, sans-serif; fill: #64748B; }
+          .a5xN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <rect x="30" y="66" width="210" height="112" rx="12" fill="#C2185B"/>
+        <text class="a5xT" x="52" y="102">Efficiency (inputs)</text>
+        <text class="a5xX" x="52" y="126">cheaper, faster</text>
+        <text class="a5xX" x="52" y="144">production - more</text>
+        <text class="a5xX" x="52" y="162">drafts and variants</text>
+        <rect x="335" y="66" width="210" height="112" rx="12" fill="#E24A85"/>
+        <text class="a5xT" x="357" y="102">Effectiveness</text>
+        <text class="a5xX" x="357" y="126">pipeline, conversions,</text>
+        <text class="a5xX" x="357" y="144">retention,</text>
+        <text class="a5xX" x="357" y="162">brand lift</text>
+        <rect x="640" y="66" width="210" height="112" rx="12" fill="#8E1246"/>
+        <text class="a5xT" x="662" y="102">Net value</text>
+        <text class="a5xX" x="662" y="126">outcomes minus</text>
+        <text class="a5xX" x="662" y="144">cost and</text>
+        <text class="a5xX" x="662" y="162">brand risk</text>
+        <line x1="240" y1="122" x2="333" y2="122" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#a5xAh)"/>
+        <line x1="545" y1="122" x2="638" y2="122" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#a5xAh)"/>
+        <text class="a5xM" x="252" y="112">cross the</text>
+        <text class="a5xM" x="252" y="152">bridge</text>
+        <rect x="30" y="230" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="a5xN" x="54" y="242">The trap: counting output (more content) as if it were outcome. Measure results, not volume.</text>
+        <text class="a5xM" x="54" y="278">Vanity metrics (impressions, raw volume) live on the left. Board metrics live on the right.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the ROI bridge: cheap inputs only count once they cross into real outcomes</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The content-sludge trap - and why volume can go negative<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>When production is nearly free, the natural instinct is to make more. But "more" is not neutral. Mass mediocre AI content - what the industry now calls <strong>content sludge</strong> - dilutes your brand, trains your audience to skim past you, and increasingly gets discounted by search and answer engines that reward genuine expertise. The efficiency gain can quietly turn into an effectiveness loss.</p>
+        <ul>
+          <li><strong>Volume is a vanity metric.</strong> Pieces published, words generated, and impressions are inputs. They feel like progress and prove nothing about pipeline or brand.</li>
+          <li><strong>Sludge has a cost.</strong> Generic AI content that ranks for nothing and converts no one still consumes review time, brand equity, and audience patience.</li>
+          <li><strong>Fewer, better beats more, blander.</strong> The teams winning with AI use the efficiency to raise quality and free humans for strategy - not to flood the channel.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The blog that doubled output and halved traffic.</strong> A team used AI to quadruple its publishing pace, celebrated the volume, then watched organic traffic fall as thin posts buried the good ones and search stopped trusting the domain. The scoreboard said "winning". The business said otherwise. Output was the wrong number all along.</p>
+        </div>
+        <p><strong>Questions to ask your team</strong></p>
+        <ul>
+          <li>What number are we actually celebrating this quarter - and is it an input or an outcome?</li>
+          <li>If we published half as much at twice the quality, what would we expect to happen?</li>
+          <li>Where might we already be adding sludge that dilutes the brand?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Outcome metrics that belong on a board slide<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Measure this (effectiveness)</th><th>Not this (efficiency / vanity)</th></tr></thead>
+          <tbody>
+            <tr><td>Qualified pipeline and revenue influenced</td><td>Pieces of content published</td></tr>
+            <tr><td>Conversion rate and cost per acquisition</td><td>Words or assets generated</td></tr>
+            <tr><td>Retention, repeat purchase, lifetime value</td><td>Raw impressions and reach</td></tr>
+            <tr><td>Brand lift, share of voice, search trust</td><td>Time saved, alone, with no outcome tied to it</td></tr>
+            <tr><td>Time freed and reinvested into strategy</td><td>"We are using AI a lot" as a headline</td></tr>
+          </tbody>
+        </table>
+        <p>Time saved is a legitimate efficiency gain - but only report it paired with what the freed time produced. Efficiency earns its place on the slide when it is connected to an outcome on the left.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: PILOT TO SCALE + BUY VS BUILD ============ -->
+  <section class="section" id="pilot-buy-build">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the industry pilot-to-scale playbooks</span>
+      <h2>Pilot to scale, and buy vs build <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">You do not need a transformation program to start. You need one measurable pilot: a single channel, a baseline, clear guardrails, and a date where you decide to scale, adjust, or stop. And before you buy anything, know which of three doors a tool comes through - because the real trade is cost against control and brand fit, not raw quality.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The pilot loop - baseline, guardrails, decision gate<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A good AI-marketing pilot is small enough to run in weeks and honest enough to trust. Pick one channel where you already have data, so you can compare like for like.</p>
+        <ul>
+          <li><strong>Baseline first.</strong> Write down the current outcome - conversion, cost per lead, retention - before you change anything. No baseline, no ROI story.</li>
+          <li><strong>Guardrails from a3.</strong> Brand voice, disclosure, and data-privacy rails apply from day one, not after scale. A pilot that cuts those corners teaches the wrong habit.</li>
+          <li><strong>One decision gate.</strong> Set a date and a threshold up front: "if conversion holds and cost drops X% with no brand or compliance incident, we scale". Decide in advance what "stop" looks like too.</li>
+        </ul>
+        <p><strong>Questions to ask your team</strong></p>
+        <ul>
+          <li>Which single channel has clean enough data to give us an honest baseline?</li>
+          <li>What is our stop condition - not just our scale condition?</li>
+          <li>Who owns the guardrails during the pilot?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Three doors - buy, build, or blend<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Most tool decisions collapse into three options. None is "best" in the abstract - the answer depends on how much control and brand fit you need for that job, and how much cost and effort you can carry.</p>
+        <table class="clean">
+          <thead><tr><th>Door</th><th>What it is</th><th>Best when</th><th>Watch-out</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Buy</strong></td><td>Marketing-native tools (Jasper, Copy.ai, HubSpot AI, Canva)</td><td>You want speed, brand kits, and templates without building</td><td>Data terms and lock-in - check what leaves your walls</td></tr>
+            <tr><td><strong>Build</strong></td><td>Custom or brand GPTs trained on your voice and assets</td><td>Brand fit and control matter more than time to launch</td><td>Upkeep, governance, and someone must own it</td></tr>
+            <tr><td><strong>Blend</strong></td><td>In-suite copilots inside your CMS, ESP, ad, and CRM tools</td><td>You want AI where the work already lives, low friction</td><td>Governed by that vendor's terms - read them</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>The trade, in one line</strong>
+          Buy trades control for speed. Build trades speed for control and brand fit. Blend trades independence for convenience. Pick per job, not once for the whole team.
+        </div>
+        <p><strong>Questions to ask your team</strong></p>
+        <ul>
+          <li>For this specific job, do we actually need brand-level control, or is speed enough?</li>
+          <li>If a tool shut down tomorrow, how exposed would we be?</li>
+          <li>Who owns and maintains anything we choose to build?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why quality is rarely the deciding factor<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Across the three doors, raw output quality is now broadly similar - most run on the same underlying models. What genuinely differs is data safety, brand consistency, workflow fit, and cost. Leaders who choose on a slick demo alone tend to relearn this the hard way. Choose on the trade that matters for the job, then let the pilot prove it.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE BUSINESS-CASE ONE-PAGER ============ -->
+  <section class="section" id="business-case">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the artifact you carry into a6</span>
+      <h2>The business-case one-pager <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Budget follows a clear, honest argument - not a longer deck. A one-pager forces the discipline: one problem, one use case, a real cost, an honest expected value, the risks with their guardrails, and a specific ask. If you cannot fit it on a page, you do not yet understand it well enough to fund it.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The six blocks of a fundable one-pager<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>1 · Problem.</strong> The business pain in one sentence - not "we should use AI", but the outcome that is stuck.</li>
+          <li><strong>2 · Use case.</strong> The specific AI-marketing use case from your a2 map that addresses it.</li>
+          <li><strong>3 · Cost.</strong> Tools, time, and any build or upkeep - a real number, not "cheap".</li>
+          <li><strong>4 · Expected value.</strong> One honest outcome metric with a range, tied to the baseline. An effectiveness number, never output volume.</li>
+          <li><strong>5 · Risk + brand guardrails.</strong> The disclosure, brand, and data-privacy rails from a3, and what happens if they slip.</li>
+          <li><strong>6 · The ask.</strong> Exactly what you need - budget, headcount, or a decision - and by when.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Honesty is the credibility move</strong>
+          A range ("we expect conversion up 5-12%, measured against Q2 baseline") beats a single confident number. Executives fund people who show their working and name their risks - not people who promise magic.
+        </div>
+        <p><strong>Questions to ask your team</strong></p>
+        <ul>
+          <li>Can we state the problem without saying the word "AI"?</li>
+          <li>Is our expected-value metric an outcome, or did an output sneak in?</li>
+          <li>What is the one risk that would sink this, and how do we guard it?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>How this feeds the roadmap in a6<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>One funded pilot is a data point. The roadmap session (a6) turns a portfolio of these one-pagers into a sequenced 24-month plan and a CMO narrative. The business case you draft tonight becomes the first concrete milestone in that story - which is why the expected-value metric has to be one you would be comfortable reporting against later.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ EXERCISE ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Exercise</span>
+      <h2>Draft a mini business case <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <p class="lede">Pick one use case from your a2 use-case map and turn it into a one-page business case. Keep it honest - the point is an argument you would defend to a board, not the biggest number you can justify.</p>
+    <ul>
+      <li>Choose one use case from a2. Write the <strong>problem</strong> as a stuck business outcome, in one sentence, without the word "AI".</li>
+      <li>Define its <strong>baseline</strong>: the current value of the outcome you will move (conversion, cost per lead, retention). If you do not have it, note where you would get it.</li>
+      <li>Set one <strong>success metric</strong> as an outcome, not an output - and give it a range, not a single hero number.</li>
+      <li>Name the <strong>cost</strong> (tools, time, any build), the <strong>risk plus brand guardrails</strong> from a3, and the exact <strong>ask</strong>.</li>
+      <li>Sanity-check: if a skeptical CFO read only this page, would they understand the bet and trust the numbers? Bring it to a6.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-business and AI-marketing curricula and industry evidence. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Wharton (Coursera) - AI for Business, marketing / finance module</span><span class="note">Part 1 · ROI, efficiency vs effectiveness</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">2026 AI-marketing guides + industry pilot-to-scale evidence</span><span class="note">Part 2 · pilots, buy vs build vs blend</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Content-quality + AI-search discounting evidence</span><span class="note">Part 1 · content-sludge, move-fast - re-verify</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Your team's AI dashboard leads with "content published up 4x this quarter". As a leader, what is your reaction?</p>
+      <button class="qopt" type="button">A · Great - efficiency is the goal, so this is the win</button>
+      <button class="qopt" type="button">B · That is an input, not an outcome - ask what pipeline, conversion, or retention actually moved</button>
+      <button class="qopt" type="button">C · We should aim for 8x next quarter</button>
+      <p class="qwhy">Volume is efficiency and a vanity metric. It proves activity, not results, and can even go negative through content sludge. Redirect the scoreboard to effectiveness: pipeline, conversions, retention, brand lift.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · What is the content-sludge trap?</p>
+      <button class="qopt" type="button">A · Paying too much for a marketing-native tool</button>
+      <button class="qopt" type="button">B · A pilot that runs without a baseline</button>
+      <button class="qopt" type="button">C · Mass mediocre AI content that dilutes the brand and gets discounted by search - efficiency turning into an effectiveness loss</button>
+      <p class="qwhy">Near-free production tempts teams to flood channels. Generic AI content buries the good work, trains audiences to skim, and loses search trust. Fewer, better beats more, blander.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · You are choosing between buying a marketing-native tool and building a custom brand GPT. What is the core trade-off?</p>
+      <button class="qopt" type="button">A · Buy trades control for speed; build trades speed for control and brand fit - and quality is rarely the deciding factor</button>
+      <button class="qopt" type="button">B · Build is always higher quality, so build</button>
+      <button class="qopt" type="button">C · Buy is always cheaper, so buy</button>
+      <p class="qwhy">Output quality is broadly similar across doors. The real trade is cost and control against brand fit and upkeep. Decide per job, and let a pilot with a baseline prove it.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 5 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Efficiency ≠ effectiveness</b><span>cheaper inputs are not results. Report outcomes (pipeline, conversion, retention, brand lift), not volume.</span></div>
+      <div class="cheat-item"><b>Content-sludge trap</b><span>mass mediocre AI content dilutes brand + loses search trust. Fewer, better beats more, blander.</span></div>
+      <div class="cheat-item"><b>Vanity metrics</b><span>pieces published, words generated, raw impressions. Feels like progress, proves nothing.</span></div>
+      <div class="cheat-item"><b>Pilot loop</b><span>one channel → baseline first → a3 guardrails → a decision gate with scale AND stop conditions.</span></div>
+      <div class="cheat-item"><b>Three doors</b><span>Buy (native tools) · Build (brand GPTs) · Blend (in-suite copilots). Trade = cost + control + brand fit.</span></div>
+      <div class="cheat-item"><b>Quality rarely decides</b><span>output is similar across doors; data safety, brand fit, and upkeep are what actually differ.</span></div>
+      <div class="cheat-item"><b>One-pager blocks</b><span>problem · use case · cost · expected value (honest range) · risk + guardrails · the ask.</span></div>
+      <div class="cheat-item"><b>Honesty funds you</b><span>a defended range beats a confident single number. Show your working; name your one killer risk.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 5 of 6 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a4-ai-ready-marketing-team.html">← Previous: The AI-ready marketing team</a> &nbsp;·&nbsp; <a href="a6-strategy-roadmap.html">Next: Strategy &amp; the 24-month roadmap →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

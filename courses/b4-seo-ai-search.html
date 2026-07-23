@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 4 · SEO &amp; AI-search (GEO) - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 4 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 4 of 10</div>
+    <h1>SEO &amp; AI-search: <span class="accent">rank in links, get cited in answers</span></h1>
+    <p class="sub">There are two searches now. People still type queries and click blue links - and they increasingly ask an AI and read whatever it summarises. Tonight you build a Cadence topic cluster that targets real search intent, and you rewrite a page to be the thing an AI answer quotes. Same rails: own the claim, and never trust the model's made-up keyword numbers.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Builder track</span>
+      <span class="chip audience">Practitioners: SEO · content · growth</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Warm-up</span>
+      <span class="a2" style="flex:4">3-21 · Two searches, clusters &amp; GEO</span>
+      <span class="a3" style="flex:5">21-42 · Build-along: cluster + answer rewrite</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are in the Cadence campaign</h2>
+    </div>
+    <p class="lede">In b3 you built the content engine and drafted a Cadence pillar section. Tonight you make that content <strong>discoverable</strong> - in both the search box and the AI answer box. This is the session where "we wrote great content" turns into "and people actually find it". AI is a genuine accelerator here for mapping clusters and drafting quotable answers - and a genuine liability if you let it invent search-volume numbers. We do both: use it for the thinking, verify it for the data.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A Cadence topic cluster - one pillar plus five or six supporting pages mapped to real search intent - and a page section rewritten to be cited by AI answers: a clear up-front answer, structured facts, and a quotable definition an engine can lift verbatim.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: TWO SEARCHES ============ -->
+  <section class="section" id="two-searches">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Harvard DCE content + SEO/GEO</span>
+      <h2>Two searches now: classic SEO + GEO <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">For twenty years, "search" meant one thing: rank in the blue links so people click through. That still matters. But in 2026 a huge share of questions get answered inside an AI overview or a chat reply, where the user may never click at all. Winning discovery now means two jobs: rank in classic search, and get cited inside the AI answer.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One query now splits two ways: classic SEO ranks in the blue links so the reader clicks your page, and GEO gets you cited inside the AI answer so you win the mention">
+        <style>
+          .b4xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b4xTi { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b4xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b4xXi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b4xN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <defs>
+          <marker id="b4xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <!-- query -->
+        <rect x="20" y="110" width="150" height="80" rx="12" fill="#C2185B"/>
+        <text class="b4xT" x="34" y="146">Search query</text>
+        <text class="b4xX" x="34" y="168">someone asks</text>
+        <!-- classic path -->
+        <rect x="300" y="40" width="200" height="76" rx="12" fill="#E24A85"/>
+        <text class="b4xT" x="314" y="74">Classic SEO</text>
+        <text class="b4xX" x="314" y="96">rank in the blue links</text>
+        <rect x="558" y="40" width="292" height="76" rx="12" fill="#F4A9C7"/>
+        <text class="b4xTi" x="572" y="74">You win the visit</text>
+        <text class="b4xXi" x="572" y="96">reader clicks through to your page</text>
+        <!-- geo path -->
+        <rect x="300" y="184" width="200" height="76" rx="12" fill="#8E1246"/>
+        <text class="b4xT" x="314" y="218">GEO + AEO</text>
+        <text class="b4xX" x="314" y="240">cited in AI answers</text>
+        <rect x="558" y="184" width="292" height="76" rx="12" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="b4xTi" x="572" y="218">You win the mention</text>
+        <text class="b4xXi" x="572" y="240">quoted inside the AI answer</text>
+        <!-- branch arrows -->
+        <line x1="170" y1="150" x2="298" y2="80" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b4xAh)"/>
+        <line x1="170" y1="150" x2="298" y2="220" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b4xAh)"/>
+        <line x1="500" y1="78" x2="556" y2="78" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b4xAh)"/>
+        <line x1="500" y1="222" x2="556" y2="222" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b4xAh)"/>
+        <!-- note -->
+        <rect x="20" y="278" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b4xN" x="44" y="290">In 2026 both matter: rank in classic search AND get cited inside AI answers.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one query, two ways to win: the blue-link click and the AI-answer citation</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>What GEO is, and why it is suddenly urgent<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>GEO - generative engine optimization, also called AEO, answer-engine optimization - is the practice of getting your content surfaced and cited inside AI-generated answers: search overviews, chat replies, and assistant responses. It is not a replacement for SEO. It is a second front that opened fast as AI search reshaped how people find things.</p>
+        <ul>
+          <li><strong>Classic SEO</strong> optimises to rank a page so a human clicks it. The win is a visit.</li>
+          <li><strong>GEO</strong> optimises to be the source an AI answer quotes or names. The win is a mention - sometimes without a click, which is exactly why brand and citation matter more, not less.</li>
+          <li><strong>They share a foundation.</strong> Clear structure, one idea per section, and answers stated up front help both. Most of your b3 structure work already earns GEO points.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The mindset shift</strong>
+          Stop asking only "how do I rank this page?" and add "if an AI answered this question out loud, would it quote us - and would our name come through?" Both questions, every important page.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Classic SEO vs GEO at a glance<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Classic SEO</th><th>GEO / answer-engine optimization</th></tr></thead>
+          <tbody>
+            <tr><td>Goal: rank in the results list</td><td>Goal: be cited inside the AI answer</td></tr>
+            <tr><td>Win = a click to your page</td><td>Win = a mention, often with no click</td></tr>
+            <tr><td>Rewards keywords, links, page authority</td><td>Rewards clear answers, structured facts, entity clarity</td></tr>
+            <tr><td>Measured in rankings and organic traffic</td><td>Measured in citations and share of AI answers</td></tr>
+          </tbody>
+        </table>
+        <p>You do not pick one. In 2026 a strong page earns both - and the structure that wins GEO is mostly the reader-first structure you already learned in b3.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: CLUSTERS + INTENT ============ -->
+  <section class="section" id="clusters">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers Harvard DCE clusters + on-page</span>
+      <h2>Topic clusters + intent <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Ranking is not about stuffing one page with keywords. It is about owning a topic - a pillar page on the big theme, surrounded by a cluster of supporting pages that each answer a specific question, all linked together. AI is excellent at helping you map that cluster around search <em>intent</em>, not just words. Just do not let it invent the numbers.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Map a pillar + cluster around intent, not keywords<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A keyword tells you the words someone typed. <em>Intent</em> tells you what they actually wanted - to learn, to compare, or to buy. The same phrase can carry different intent, and matching it is what earns the ranking and the click.</p>
+        <ul>
+          <li><strong>Pillar page</strong> covers the broad topic ("AI meeting notes") and links out to every supporting page.</li>
+          <li><strong>Cluster pages</strong> each answer one specific intent ("how to share meeting action items", "AI note-taker vs manual notes") and link back to the pillar.</li>
+          <li><strong>Match the intent.</strong> Informational queries want a clear explainer; comparison queries want an honest comparison; buying queries want the offer. AI helps you sort a keyword list into these buckets fast.</li>
+        </ul>
+        <p>On-page basics still apply: a descriptive title, clean heading hierarchy, structured facts, and internal links between the pillar and its cluster so search engines see the topic as one authoritative set.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>GEO tactics: how to earn the citation<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>GEO tactic</th><th>Why it works</th></tr></thead>
+          <tbody>
+            <tr><td>State the answer clearly, up top</td><td>Answer engines lift the first clear, direct response - bury it and you lose the citation</td></tr>
+            <tr><td>Structure facts (lists, tables, steps)</td><td>Structured facts are easy for a model to extract and quote accurately</td></tr>
+            <tr><td>Write quotable definitions</td><td>A crisp one-sentence definition is exactly what an AI answer pulls verbatim</td></tr>
+            <tr><td>Entity clarity - name things plainly</td><td>Clear "what it is / who it is for" helps the model attribute the answer to you</td></tr>
+            <tr><td>Keep facts current and sourced</td><td>Models favour fresh, consistent, verifiable facts over vague marketing prose</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>The overlap is the gift</strong>
+          Clear up-front answers and structured facts also make a page more readable and more link-worthy. Optimising for the AI answer usually improves the human page too.
+        </div>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The volumes that did not exist.</strong> A marketer asked a chatbot for "monthly search volumes" for a keyword list and pasted them straight into a content plan. Half the numbers were invented - the model does not have live search data and will confidently make it up. Leadership approved a quarter of work on fiction. Use AI to <em>group and prioritise</em> keywords; use a real keyword tool for the actual numbers.</p>
+    </div>
+  </section>
+
+  <!-- ============ PART 3: PROGRAMMATIC SCALE ============ -->
+  <section class="section" id="programmatic">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers CXL programmatic SEO</span>
+      <h2>Programmatic scale, carefully <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Once you have a cluster template that works, AI makes it tempting to spin up hundreds of pages at once - programmatic SEO. Done well, it can own a whole category of long-tail queries. Done carelessly, it produces thin, near-duplicate pages that search engines penalise. The difference is a quality gate.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Scale the pattern, gate the quality<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Programmatic SEO means generating many pages from one template plus a data set - one page per city, per use case, per integration. AI can draft them at scale. That is the opportunity and the trap.</p>
+        <ul>
+          <li><strong>Each page must earn its place.</strong> Real, specific value per page - not the same paragraph with the noun swapped. Thin, templated sameness is exactly what quality updates target.</li>
+          <li><strong>Dedup ruthlessly.</strong> If two pages say essentially the same thing, merge them. Near-duplicates compete with each other and drag the whole set down.</li>
+          <li><strong>Gate before publish.</strong> A human quality check and a fact-check on every generated page. Scale without a gate is how you turn AI leverage into an SEO penalty and a pile of sludge.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The honest rule of scale</strong>
+          Only scale a page type once a hand-made version of it actually ranks and reads well. Automate a proven winner - never automate a guess.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Build a Cadence topic cluster <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Turn the Cadence pillar theme into a real topic cluster - one pillar plus five or six supporting pages, each mapped to a specific search intent. AI proposes; you validate the intent and kill anything that does not fit a real reader.</p>
+
+    <div class="steps">
+      <div class="step"><p>Open any chat AI. Give it Cadence's positioning from b2 and your pillar theme from b3 (for example, "AI meeting notes for busy teams").</p></div>
+      <div class="step"><p>Ask it to propose one pillar page plus five or six supporting cluster pages, and for each, to state the <strong>search intent</strong> (informational, comparison, or buying) and the specific question that page answers.</p></div>
+      <div class="step"><p><strong>Validate the intent yourself.</strong> Read each proposed page: is that a real question a Cadence buyer would ask? Cut the ones that are keyword-shaped but human-empty. Trust your knowledge of the audience over the model's guess.</p></div>
+      <div class="step"><p>Ask for the internal-linking map: which cluster pages link to the pillar, and how the pillar links back. This is what makes search engines see one authoritative topic.</p></div>
+      <div class="step"><p>Do <strong>not</strong> accept any search-volume or difficulty numbers the model offers - it does not have that data. Mark those as "verify in a real tool" and move on.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">Prompt A - keyword-stuffed, with made-up data</span>Give me 20 keywords about meeting notes with their monthly search volumes and difficulty scores, and write a page for each.</div>
+
+    <div class="prompt-box good"><span class="label">★ Prompt B - intent-mapped cluster (you validate)</span>Help me plan a topic cluster for Cadence, an AI note-taker for consultants and
+team leads in back-to-back meetings (free solo plan; paid Teams plan).
+
+Pillar theme: "AI meeting notes for busy teams".
+
+Propose:
+1) One pillar page (broad topic).
+2) 5-6 supporting cluster pages. For each, give: the specific question it answers,
+   the search intent (informational / comparison / buying), and how it links to the pillar.
+
+Rules: base pages on real questions this audience asks, not keyword padding.
+Do NOT give me search volumes or difficulty scores - you do not have that data.
+Mark anything that would need a real keyword tool as "[verify in tool]".</div>
+
+    <div class="callout tip">
+      <strong>Why this is demo one</strong>
+      A validated cluster is the skeleton of everything that follows - the pages you will write, the ads you will point at them (b5), and the emails that link to them (b6). Build the map right and the campaign has a spine.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Rewrite a page to be answer-engine friendly <span class="tag demo">★ 8 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Take one section of a Cadence page and rewrite it so an AI answer would happily quote it: a clear answer up front, structured facts, and a crisp, quotable definition. This is GEO in one concrete edit.</p>
+
+    <div class="steps">
+      <div class="step"><p>Pick a page section that answers a real question - say, "What is an AI note-taker?" or "How do AI meeting notes work?" Use your b3 draft if you have one.</p></div>
+      <div class="step"><p>Rewrite the opening so the <strong>answer comes first</strong> - one or two direct sentences before any context. If an engine read only the first line, it should already have the answer.</p></div>
+      <div class="step"><p>Add a <strong>quotable one-sentence definition</strong> and structure the supporting facts as a short list or steps, so a model can lift them cleanly and accurately.</p></div>
+      <div class="step"><p>Check entity clarity: is it obvious what Cadence is and who it is for? Make sure your name and category come through, since a citation may arrive with no click.</p></div>
+      <div class="step"><p>Fact-check every claim in the rewrite - GEO does not suspend rail one. An answer engine quoting your fabricated stat is your fabricated stat, at scale.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The answer-engine rewrite prompt</span>Rewrite this page section to be cited by AI answers, keeping our brand voice.
+
+Do this:
+- Put a clear, direct answer in the first 1-2 sentences (answer-first).
+- Include one crisp, quotable one-sentence definition.
+- Structure the supporting facts as a short list or steps.
+- Make it obvious what Cadence is and who it is for (entity clarity).
+
+Rules: use only facts I supply; if you want a stat I did not give you, write
+"[need source]" - do not invent one. Keep it readable for a human too.
+
+[PASTE SECTION]</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The answer-first paragraph that started getting cited.</strong> A team moved one buried definition to the top of a page and added a one-line "X is..." sentence. Within weeks that line began showing up, quoted, inside AI answers - and their brand name rode along with it. No new content, just structure that made the page easy to quote. GEO is often an edit, not a rewrite from scratch.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish the Cadence topic cluster: one pillar, five or six validated cluster pages, each with a confirmed intent and a link back to the pillar.</li>
+      <li>Take the volume/difficulty items you marked "[verify in tool]" and check two or three in a real keyword tool. Note how far the model's guesses would have been off.</li>
+      <li>Run the answer-engine rewrite on one live page of your own. Move the answer to the top, add a quotable definition, structure the facts.</li>
+      <li>Search two of your key questions in an AI assistant today. Are you cited? Is a competitor? That gap is your GEO to-do list.</li>
+      <li>Optional: sketch one programmatic page type you could scale later - and write the quality gate you would put on it before you publish a single one.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula and vendor documentation. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Harvard DCE - AI Marketing: content + SEO/GEO</span><span class="note">Parts 1-2 · classic SEO, GEO, clusters, intent</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">CXL - programmatic SEO at scale</span><span class="note">Part 3 · scale with a quality gate + dedup</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">2026 AI-search / GEO guides (re-verify)</span><span class="note">Part 1 · answer-engine landscape moves fast</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">FTC / brand canon - claims &amp; disclosure</span><span class="note">Demos · fact-check rail carries into GEO</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What is the difference between classic SEO and GEO?</p>
+      <button class="qopt" type="button">A · GEO replaces SEO - you only need one now</button>
+      <button class="qopt" type="button">B · SEO aims to rank a page so people click it; GEO aims to get you cited inside AI answers - and both matter</button>
+      <button class="qopt" type="button">C · GEO is just SEO with more keywords</button>
+      <p class="qwhy">Classic SEO wins the click by ranking in the results; GEO (answer-engine optimization) wins the mention by being what an AI answer quotes. In 2026 you optimise for both, and they share a structural foundation.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · What is a topic cluster, and what should each page target?</p>
+      <button class="qopt" type="button">A · One giant page stuffed with every keyword you can find</button>
+      <button class="qopt" type="button">B · A random set of blog posts published on a schedule</button>
+      <button class="qopt" type="button">C · A pillar page on the broad theme plus supporting pages, each mapped to a specific search intent and linked together</button>
+      <p class="qwhy">A cluster is a pillar page surrounded by supporting pages, each answering one specific question mapped to intent (learn, compare, buy) - not just a keyword. Internal links tie them into one authoritative topic.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The AI gives you neat monthly search volumes for your keyword list. What do you do?</p>
+      <button class="qopt" type="button">A · Do not trust them - the model has no live search data and invents numbers; verify in a real keyword tool</button>
+      <button class="qopt" type="button">B · Use them - they are precise, so they must be accurate</button>
+      <button class="qopt" type="button">C · Average them with your gut feeling</button>
+      <p class="qwhy">Chat models do not have live search-volume data and will fabricate confident numbers. Use AI to group and prioritise keywords; get the actual volumes and difficulty from a real SEO tool.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Two searches now</b><span>classic SEO (rank + click) AND GEO/AEO (get cited in AI answers). Optimise for both in 2026.</span></div>
+      <div class="cheat-item"><b>SEO win vs GEO win</b><span>SEO win = a visit to your page. GEO win = a mention inside the AI answer, often with no click.</span></div>
+      <div class="cheat-item"><b>Topic cluster</b><span>one pillar page on the broad theme + 5-6 supporting pages, each on one intent, all internally linked.</span></div>
+      <div class="cheat-item"><b>Intent &gt; keywords</b><span>match what the reader wanted - learn, compare, or buy - not just the words they typed.</span></div>
+      <div class="cheat-item"><b>GEO tactics</b><span>answer up top, structured facts (lists/tables), quotable one-line definitions, clear entity naming.</span></div>
+      <div class="cheat-item"><b>Verify the data</b><span>AI has no live search volumes - it invents them. Use it to group keywords; use a real tool for numbers.</span></div>
+      <div class="cheat-item"><b>Programmatic scale</b><span>only automate a page type that already ranks by hand. Quality gate + dedup, or you make sludge Google penalises.</span></div>
+      <div class="cheat-item"><b>Rails still apply</b><span>fact-check every claim, even in a quotable answer; a cited fabrication is your fabrication at scale.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 4 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b3-content-engine.html">← Previous: The content engine</a> &nbsp;·&nbsp; <a href="b5-paid-ads-creative.html">Next: Paid ads &amp; creative →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

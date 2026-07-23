@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 3 · The content engine - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 3 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 3 of 10</div>
+    <h1>The content engine: <span class="accent">brief in, on-brand draft out</span></h1>
+    <p class="sub">AI can 10x how much content you produce. It can also 10x the sludge. Tonight you build the pipeline that turns raw AI output into copy you would actually put your name on - brief, draft, voice edit, fact-check, publish - and you write a real Cadence pillar article and a reusable brand-voice prompt while you do it.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Builder track</span>
+      <span class="chip audience">Practitioners: content · SEO · brand</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Warm-up</span>
+      <span class="a2" style="flex:4">3-21 · The pipeline, voice &amp; structure</span>
+      <span class="a3" style="flex:5">21-42 · Build-along: article + anti-slop edit</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are in the Cadence campaign</h2>
+    </div>
+    <p class="lede">In b1 you learned what AI can and cannot be trusted with. In b2 you nailed Cadence's positioning - who it is for, the real pain, the value prop. Tonight that positioning becomes <strong>content</strong>. This is the session where AI starts to feel like leverage: you will draft a full pillar article section in minutes. It is also the session where AI most tempts you into slop, so we build the guardrails at the same time as the speed. Same two rails as always: you own the brand and the claim, you protect the data.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A drafted Cadence pillar-article section built from the b2 positioning brief, a reusable brand-voice prompt you can paste into any future content task, and a repeatable anti-slop edit pass that strips the tells and fact-checks every claim before it ships.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE PIPELINE ============ -->
+  <section class="section" id="pipeline">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers HubSpot AI content workflows</span>
+      <h2>The content engine: brief in, on-brand draft out <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">AI can multiply your output overnight. But volume without a brief, without your voice, and without a fact-check is just faster sludge - and sludge erodes the brand you are trying to build. The trick is not "prompt harder". It is a pipeline where AI does one job well and you own the rest.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five-step content pipeline: brief, draft, voice edit, fact-check, publish - AI drafts one step, the human owns the brief, the voice, and the facts">
+        <style>
+          .b3xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b3xTi { font: 700 15px Inter, sans-serif; fill: #1E293B; }
+          .b3xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b3xXi { font: 400 12.5px Inter, sans-serif; fill: #1E293B; }
+          .b3xN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+        </style>
+        <defs>
+          <marker id="b3xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CBD5E1"/>
+          </marker>
+        </defs>
+        <!-- 1 Brief -->
+        <rect x="15" y="60" width="150" height="92" rx="12" fill="#F4A9C7"/>
+        <text class="b3xTi" x="29" y="100">Brief</text>
+        <text class="b3xXi" x="29" y="124">you own it</text>
+        <!-- 2 Draft -->
+        <rect x="193" y="60" width="150" height="92" rx="12" fill="#C2185B"/>
+        <text class="b3xT" x="207" y="100">Draft</text>
+        <text class="b3xX" x="207" y="124">AI drafts</text>
+        <!-- 3 Voice edit -->
+        <rect x="371" y="60" width="150" height="92" rx="12" fill="#E24A85"/>
+        <text class="b3xT" x="385" y="100">Voice edit</text>
+        <text class="b3xX" x="385" y="124">you own voice</text>
+        <!-- 4 Fact-check -->
+        <rect x="549" y="60" width="150" height="92" rx="12" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="b3xTi" x="563" y="100">Fact-check</text>
+        <text class="b3xXi" x="563" y="124">you own facts</text>
+        <!-- 5 Publish -->
+        <rect x="727" y="60" width="150" height="92" rx="12" fill="#8E1246"/>
+        <text class="b3xT" x="741" y="100">Publish</text>
+        <text class="b3xX" x="741" y="124">ships clean</text>
+        <!-- arrows -->
+        <line x1="167" y1="106" x2="189" y2="106" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b3xAh)"/>
+        <line x1="345" y1="106" x2="367" y2="106" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b3xAh)"/>
+        <line x1="523" y1="106" x2="545" y2="106" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b3xAh)"/>
+        <line x1="701" y1="106" x2="723" y2="106" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#b3xAh)"/>
+        <!-- note -->
+        <rect x="15" y="212" width="14" height="14" rx="3" fill="#F59E0B"/>
+        <text class="b3xN" x="39" y="224">AI drafts one step. You own the brief, the voice, and every fact before it ships.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the content pipeline: AI drafts, the human owns voice and facts</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why "just generate more" backfires<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Point AI at "write me ten blog posts" and you get ten posts that read like everyone else's ten posts - because the model reaches for the most average phrasing every time. Average is the enemy of a brand. The pipeline exists to move each piece from average-and-fast to distinctive-and-still-fast.</p>
+        <ul>
+          <li><strong>Brief first, always.</strong> The single biggest quality lever is the brief - audience, angle, the one true proof point, the offer. No brief, no engine, just a blender.</li>
+          <li><strong>AI drafts, you don't outsource judgement.</strong> The draft is a starting block, not a finish line. It gets you to 70% in minutes so your time goes to the 30% that carries the brand.</li>
+          <li><strong>Voice and facts are non-negotiable stops.</strong> Skipping the voice edit gives you generic copy; skipping the fact-check gives you a fabricated claim. Neither ships.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The pipeline in one breath</strong>
+          Brief - draft - voice edit - fact-check - publish. AI owns "draft". You own everything on either side of it. That is the whole engine, and every content task in this track runs on it.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What each step actually produces<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Step</th><th>What comes out of it</th></tr></thead>
+          <tbody>
+            <tr><td>Brief (you)</td><td>Audience, angle, one true proof point, offer, must-avoid claims</td></tr>
+            <tr><td>Draft (AI)</td><td>A fast 70% first draft grounded only in the brief you gave</td></tr>
+            <tr><td>Voice edit (you + AI)</td><td>The draft rewritten to sound like your brand, not the internet</td></tr>
+            <tr><td>Fact-check (you)</td><td>Every claim sourced or cut - nothing invented survives</td></tr>
+            <tr><td>Publish (you)</td><td>Copy you would put your name on, structured for the reader</td></tr>
+          </tbody>
+        </table>
+        <p>Notice AI touches exactly one row. That is deliberate. The moment you let it own the brief or the fact-check, you are back to sludge.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: BRAND VOICE + ANTI-SLOP ============ -->
+  <section class="section" id="voice">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers CXL brand GPTs + anti-AI-tells</span>
+      <h2>Brand voice + the anti-slop edit <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Out of the box, AI writes in "content marketing beige" - fluent, confident, and instantly forgettable. You fix that two ways: teach it your voice with real samples, and run an edit pass that hunts down the tells that scream "a robot wrote this". Both are quick once you know the moves.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Teach voice with 2-3 real samples (few-shot)<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>You cannot describe your voice into existence with adjectives - "make it punchy and warm" gets you nothing. You <em>show</em> it. Paste two or three short pieces of real, on-brand writing and tell the model to match their rhythm, vocabulary, and attitude. This is called few-shot prompting, and it is the difference between generic and unmistakably you.</p>
+        <ul>
+          <li><strong>Pick samples that already sound right.</strong> A great past email, a landing section, a founder note. Two or three is enough; more just dilutes.</li>
+          <li><strong>Name what makes them yours.</strong> Short sentences? Dry humour? No jargon? Say it, so the model knows what to copy versus what was incidental.</li>
+          <li><strong>Save the winning prompt.</strong> Once it matches your voice, keep that prompt block. It becomes your reusable brand-voice header for every future content task - you will build one tonight.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ The brand-voice header (reuse this)</span>Here are 3 samples of our brand voice. Study their rhythm, word choice, and attitude:
+[SAMPLE 1] [SAMPLE 2] [SAMPLE 3]
+
+Our voice is: plain-spoken, confident, a little dry, zero jargon, short sentences.
+Write everything that follows in this voice. Match the samples, not generic web copy.</div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The tells that scream "AI wrote this" - and how to cut them<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Readers have gotten good at spotting AI copy, and nothing tanks trust faster. The tells are predictable, which means they are fixable. Run this table as a checklist on every draft before it goes near a publish button.</p>
+        <table class="clean">
+          <thead><tr><th>The tell</th><th>The fix</th></tr></thead>
+          <tbody>
+            <tr><td>Generic throat-clearing intro ("In today's fast-paced world...")</td><td>Cut the first paragraph. Open on the reader's actual problem or a concrete moment</td></tr>
+            <tr><td>Listicle sameness - every section the same shape and length</td><td>Vary rhythm: a one-line punch, then a longer point. Break the pattern on purpose</td></tr>
+            <tr><td>Hedging ("it is important to note", "can potentially help")</td><td>Say it straight. Delete the qualifiers or make a real claim you can back</td></tr>
+            <tr><td>Empty adjectives ("robust", "seamless", "cutting-edge")</td><td>Replace with a specific, true detail. Show the thing instead of praising it</td></tr>
+            <tr><td>Any stat or quote with no source you supplied</td><td>Source it or cut it. This is the fact-check pass - no unsupported claim ships</td></tr>
+          </tbody>
+        </table>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The blog that got quietly unpublished.</strong> A brand shipped fifteen AI-drafted posts in a week to "win at SEO". Readers noticed the sameness, a competitor screenshotted the "in today's fast-paced world" openers, and the team pulled the lot. The anti-slop pass takes ninety seconds per piece. Skipping it cost them a month.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: STRUCTURE ============ -->
+  <section class="section" id="structure">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · sets up SEO in b4</span>
+      <h2>Structure for the reader (and the algorithm) <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Great copy that is a wall of text still fails. How you structure a piece serves two audiences at once - the human skimming on a phone, and the search and answer engines deciding whether to surface you. The good news: what helps one helps the other.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>One idea per section, skimmable, clear hierarchy<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Structure is not decoration - it is how meaning survives a busy reader. AI is genuinely good at restructuring, so once you have a voice-checked draft, ask it to organise for skimming.</p>
+        <ul>
+          <li><strong>Clear heading hierarchy.</strong> One H1, descriptive H2s a skimmer could read alone and still get the gist. Each H2 owns one idea.</li>
+          <li><strong>One idea per section.</strong> If a section argues two things, split it. Tight sections are easier to read and easier for answer engines to quote.</li>
+          <li><strong>Skimmable by design.</strong> Short paragraphs, the occasional list, a bolded takeaway. Front-load the point; do not bury it in paragraph four.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>This is the bridge to b4</strong>
+          Clean structure, one idea per section, and answers up front are exactly what SEO and AI-search reward. Tonight you write for the reader; next session you make that same structure earn rankings and citations.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Draft a Cadence pillar-article section <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Take the b2 positioning brief and turn it into a real section of a Cadence pillar article - grounded, on-brand, and with every unsupported number flagged instead of faked. This is the whole pipeline in one build.</p>
+
+    <div class="steps">
+      <div class="step"><p>Open any chat AI. Paste your Cadence positioning brief from b2: who it is for (consultants and team leads in back-to-back meetings), the pain (decisions and action items lost between calls), the true proof point (notes drafted the moment a call ends), the offer (free solo plan, paid Teams plan).</p></div>
+      <div class="step"><p>Add the <strong>brand-voice header</strong> from Part 2 - your two or three real samples plus the voice description. If you have no Cadence samples, use two short pieces you like the sound of and adapt.</p></div>
+      <div class="step"><p>Ask for one section of a pillar article - say, "How teams lose decisions between meetings". Enforce the rule: use only the facts in the brief, and mark any stat or claim you were not given as <strong>[need source]</strong> rather than inventing it.</p></div>
+      <div class="step"><p>Read the draft against Part 2. Does it open on the problem, not "in today's world"? One idea per section? Any beige adjectives? You have a 70% draft; the next demo is the 30%.</p></div>
+      <div class="step"><p>Note every <strong>[need source]</strong> tag. Those are your homework - real numbers you will go find or claims you will cut. Nothing ships with an unfilled tag.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">Prompt A - ungrounded (produces beige + invented stats)</span>Write a blog post about how AI note-takers save teams time. Make it engaging and include some compelling statistics.</div>
+
+    <div class="prompt-box good"><span class="label">★ Prompt B - grounded + on-voice (produces a shippable section)</span>You are writing one section of a pillar article for Cadence, an AI note-taker.
+
+Brand voice - match these samples, not generic web copy:
+[SAMPLE 1] [SAMPLE 2]
+Voice: plain-spoken, confident, a little dry, zero jargon, short sentences.
+
+Brief - use ONLY these facts:
+For: consultants and team leads in back-to-back meetings.
+Pain: decisions and action items get lost in the scramble between calls.
+Proof: notes and action items are drafted the moment a call ends.
+Offer: free solo plan; paid Teams plan.
+
+Write the section "How teams lose decisions between meetings":
+one H2, 3-4 short paragraphs, open on the reader's problem (no "in today's world").
+Use only the facts above. If you want a statistic I did not give you, write
+"[need source]" instead of inventing one.</div>
+
+    <div class="callout tip">
+      <strong>Why this is demo one</strong>
+      This is b1's "ground it, forbid fabrication, edit" plus b2's positioning plus tonight's voice header - stacked. Every content asset in b5 through b7 is a re-run of this exact move at a new format.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Run an anti-slop edit pass <span class="tag demo">★ 8 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Take the draft from demo one (or any AI draft you have) and run the edit pass: strip the tells, tighten the rhythm, and fact-check every claim. This is the 30% that turns 70% into shippable.</p>
+
+    <div class="steps">
+      <div class="step"><p>Paste the draft back in with the tells table from Part 2. Ask the AI to flag - not fix yet - every generic intro, hedge, empty adjective, listicle-sameness section, and any stat without a source.</p></div>
+      <div class="step"><p>Now ask it to rewrite, cutting the throat-clearing opener, varying sentence rhythm, and replacing empty adjectives with specific true details from the brief. Keep your brand-voice header in play.</p></div>
+      <div class="step"><p><strong>Fact-check by hand.</strong> Go claim by claim. Every number, comparison, or "customers say" either gets a real source you own or gets cut. A [need source] tag with no source does not become a footnote - it becomes deleted text.</p></div>
+      <div class="step"><p>Read it out loud. If a sentence sounds like a brochure, rewrite it. If it sounds like your best colleague explaining the thing, it is done.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The anti-slop edit prompt</span>Edit this draft in two passes, keeping our brand voice (see header above).
+
+Pass 1 - flag only: mark every generic intro, every hedge ("it is important
+to note"), every empty adjective ("robust", "seamless"), every section that
+is the same shape as the last, and every stat or claim with no source I gave you.
+
+Pass 2 - rewrite: cut the throat-clearing opener, vary the sentence rhythm,
+replace empty adjectives with specific facts from the brief, and remove any
+unsourced claim entirely. Do not invent sources to keep a sentence.
+
+[PASTE DRAFT]</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The two-pass habit that saved a launch.</strong> A team ran flag-then-rewrite on every launch-week asset. The flag pass caught three invented stats and a competitor comparison nobody could back. Ten minutes of editing kept a fabricated claim off the homepage the week the press was watching. The rails are not bureaucracy - they are what lets you move fast without the headline.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish the Cadence pillar section from demo one, then run the anti-slop pass on it. Fill or cut every [need source] tag before you call it done.</li>
+      <li>Build your real brand-voice header: pick two or three genuinely on-brand samples from your own work and write the voice description. Save it where you can paste it every time.</li>
+      <li>Run the tells table on one existing piece of your live content. Count the tells you find - that number is why this session exists.</li>
+      <li>Take one AI draft from your week and do a by-hand fact-check. Note how many claims had no real source. Bring that number to b4.</li>
+      <li>Optional: outline the full Cadence pillar article (one H1, five or six H2s, one idea each). You will turn those H2s into a topic cluster in b4.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula and vendor documentation. Certificates and paid tooling stay with the official programs. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">HubSpot Academy - AI content workflows</span><span class="note">Part 1 · the brief-to-publish content pipeline</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">CXL - custom brand GPTs / brand voice</span><span class="note">Part 2 · few-shot voice + the anti-slop edit</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">2026 AI-marketing guides - long-form content</span><span class="note">Part 3 · structure for reader and algorithm</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">FTC / brand canon - claims &amp; disclosure</span><span class="note">Demos · fact-check rail; full depth in leader a3</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Your team can now produce ten times the content. Why is "just generate more" still a bad plan?</p>
+      <button class="qopt" type="button">A · Bigger volume always ranks better, so it is actually a good plan</button>
+      <button class="qopt" type="button">B · The models are too slow to keep up</button>
+      <button class="qopt" type="button">C · Volume without a brief, your voice, and a fact-check is just faster sludge that erodes the brand</button>
+      <p class="qwhy">AI multiplies whatever you point it at. Without a brief, voice, and fact-check, it multiplies average, generic, sometimes-fabricated copy - which damages the brand and can ship false claims.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · What is the reliable way to make AI write in your brand voice?</p>
+      <button class="qopt" type="button">A · Tell it to "be punchy, warm, and on-brand"</button>
+      <button class="qopt" type="button">B · Paste 2-3 real on-brand samples and tell it to match their rhythm and attitude (few-shot)</button>
+      <button class="qopt" type="button">C · Use a more expensive model</button>
+      <p class="qwhy">Adjectives do not transfer a voice; examples do. Showing the model two or three real samples (few-shot) teaches it your actual rhythm and vocabulary far better than any description.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Your AI draft has a confident statistic you did not supply. What is the fact-check rule?</p>
+      <button class="qopt" type="button">A · Source it from something you own, or cut it - no unsupported claim ships</button>
+      <button class="qopt" type="button">B · Keep it if it sounds plausible and reads well</button>
+      <button class="qopt" type="button">C · Add "(source: internal data)" to make it look backed</button>
+      <p class="qwhy">Rail one. Every claim is sourced or cut - never invented, never dressed up with a fake citation. A confident stat you did not supply is a fabricated claim until you prove otherwise.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The pipeline</b><span>brief → draft → voice edit → fact-check → publish. AI owns "draft"; you own everything else.</span></div>
+      <div class="cheat-item"><b>Brief first</b><span>audience, angle, one true proof point, offer, must-avoid claims. No brief, no engine - just a blender.</span></div>
+      <div class="cheat-item"><b>Teach voice</b><span>paste 2-3 real samples (few-shot) and say what makes them yours. Examples beat adjectives every time.</span></div>
+      <div class="cheat-item"><b>Save the header</b><span>once the voice matches, keep that prompt block as your reusable brand-voice header for all content.</span></div>
+      <div class="cheat-item"><b>The AI tells</b><span>generic intros, "in today's fast-paced world", listicle sameness, hedging, empty adjectives. Cut them.</span></div>
+      <div class="cheat-item"><b>The fact-check rule</b><span>every claim sourced or cut. No unsupported number ships. [need source] → find it or delete it.</span></div>
+      <div class="cheat-item"><b>Structure</b><span>one H1, descriptive H2s, one idea per section, front-load the point, skimmable. Helps readers and search.</span></div>
+      <div class="cheat-item"><b>The two rails</b><span>you own the brand + the claim (no fabrication); you protect the data (consented, no PII in consumer tools).</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 3 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b2-positioning-messaging.html">← Previous: Positioning &amp; messaging</a> &nbsp;·&nbsp; <a href="b4-seo-ai-search.html">Next: SEO &amp; AI-search (GEO) →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

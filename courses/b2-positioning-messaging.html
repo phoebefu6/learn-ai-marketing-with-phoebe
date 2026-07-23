@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder session 2 · Positioning & messaging - learn AI + marketing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+<style>
+  /* ---- marketing-live simulator (scoped ml-*) ---- */
+  .ml-shell { display: grid; grid-template-columns: 15.5rem 1fr; gap: 1rem; border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#FBE9F1); padding: 1rem; margin: 1.2rem 0 .4rem; }
+  @media (max-width: 720px) { .ml-shell { grid-template-columns: 1fr; } }
+  .ml-ctitle { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--indigo); margin-bottom: .6rem; }
+  .ml-levers { display: flex; flex-direction: column; gap: .5rem; }
+  .ml-lever { display: flex; align-items: center; gap: .6rem; text-align: left; border: 1px solid var(--hairline); background: #fff; border-radius: 12px; padding: .55rem .7rem; cursor: pointer; transition: all .14s ease; font: inherit; color: var(--ink); }
+  .ml-lever:hover { border-color: var(--indigo-soft); }
+  .ml-lever.ml-active { border-color: var(--indigo); background: var(--indigo-50); }
+  .ml-sw { flex: none; width: 2rem; height: 1.15rem; border-radius: 999px; background: var(--faint); position: relative; transition: background .14s ease; }
+  .ml-sw::after { content: ""; position: absolute; top: 2px; left: 2px; width: calc(1.15rem - 4px); height: calc(1.15rem - 4px); border-radius: 50%; background: #fff; transition: transform .14s ease; box-shadow: 0 1px 2px rgba(30,41,59,.3); }
+  .ml-lever.ml-active .ml-sw { background: var(--indigo); }
+  .ml-lever.ml-active .ml-sw::after { transform: translateX(.85rem); }
+  .ml-ltext { display: flex; flex-direction: column; line-height: 1.25; }
+  .ml-ltext b { font-size: .84rem; font-weight: 700; }
+  .ml-ltext span { font-size: .72rem; color: var(--muted); }
+  .ml-modes { display: flex; gap: .4rem; margin-top: .9rem; }
+  .ml-mode { flex: 1; border: 1px solid var(--hairline); background: #fff; border-radius: 999px; padding: .38rem .5rem; font-size: .74rem; font-weight: 700; cursor: pointer; color: var(--muted); transition: all .14s ease; }
+  .ml-mode.ml-on { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+  .ml-stage { min-width: 0; }
+  .ml-meters { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: .8rem; }
+  .ml-meter { flex: 1; min-width: 9rem; border: 1px solid var(--hairline); border-radius: 12px; background: #fff; padding: .6rem .8rem; }
+  .ml-mlabel { display: block; font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--muted); }
+  .ml-mval { font-size: 1.7rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.2; color: var(--ink); }
+  .ml-mval.ml-good { color: var(--indigo); }
+  .ml-bar { height: 7px; border-radius: 999px; background: var(--hairline); margin-top: .35rem; overflow: hidden; }
+  .ml-bar i { display: block; height: 100%; background: linear-gradient(90deg,var(--indigo-mid),var(--indigo)); transition: width .3s ease; }
+  .ml-draftlabel, .ml-scorehead { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--indigo); margin-bottom: .4rem; }
+  .ml-scorehead { text-transform: none; font-size: .95rem; letter-spacing: 0; color: var(--ink); }
+  .ml-draft { border: 1px solid var(--hairline); border-left: 3px solid var(--indigo); border-radius: 10px; background: #fff; padding: .8rem 1rem; }
+  .ml-line { font-size: .9rem; margin: 0 0 .55rem; line-height: 1.6; }
+  .ml-line:last-child { margin-bottom: 0; }
+  .ml-line.ml-warn { color: var(--amber-ink); background: var(--amber-50); border-radius: 8px; padding: .5rem .65rem; }
+  .ml-table { width: 100%; border-collapse: collapse; margin: .3rem 0 .5rem; font-size: .86rem; }
+  .ml-table th { text-align: left; text-transform: uppercase; font-size: .66rem; letter-spacing: .07em; color: var(--muted); padding: .35rem .5rem; border-bottom: 1px solid var(--hairline); }
+  .ml-table td { padding: .4rem .5rem; border-bottom: .5px solid var(--hairline); }
+  .ml-rmark { font-weight: 800; text-align: center; }
+  .ml-r-ok .ml-rmark { color: var(--indigo); }
+  .ml-r-no .ml-rmark { color: var(--faint); }
+  .ml-note, .ml-rail { font-size: .78rem; color: var(--muted); line-height: 1.55; }
+  .ml-rail { margin-top: .8rem; border-top: 1px dashed var(--hairline); padding-top: .6rem; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-marketing-with-phoebe</a> / Builder session 2 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Marketing with Phoebe · Builder track · Session 2 of 10</div>
+    <h1>Positioning &amp; messaging: <span class="accent">stop talking to everyone</span></h1>
+    <p class="sub">Every channel you build later stands on this session. You will define who Cadence is really for, the job it does for them, and a message that lands - then drive a live simulator that shows message-market fit climb as you sharpen the ICP, pain, offer, and channel. The lesson underneath: a message aimed at everyone reaches no one, and no bigger model saves a fuzzy target.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Builder track</span>
+      <span class="chip audience">Practitioners: brand · product marketing · growth</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-17 · Positioning that lands</span>
+      <span class="a3" style="flex:5">17-42 · Simulator + build-along</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Why positioning is the campaign's foundation</h2>
+    </div>
+    <p class="lede">Content, SEO, ads, email, social - every session after this one is just a channel carrying a message. Get the message wrong and you scale noise; get it right and every channel compounds. AI makes producing messages nearly free, which makes choosing the <em>right</em> one the entire job. Tonight you build Cadence's positioning, then feel exactly what sharpening it does in the simulator.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      Cadence's ICP and value proposition for both the solo and Teams motions, hands-on time with the message-market-fit simulator, three tested positioning variants, and a reusable positioning prompt you will feed every later session.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: POSITIONING THAT LANDS ============ -->
+  <section class="section" id="positioning">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Harvard DCE segmentation + CXL positioning</span>
+      <h2>Positioning that lands <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">A strong message is not clever wording - it is the right five ingredients, in order: a specific person, the job they are trying to do, the value you create, the proof, and a clear offer. AI can draft the words in seconds; only you can choose the target. Anatomy first, words second.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The anatomy of a strong message stacked in order: specific ICP, the job to be done, the value, the proof, and a clear offer - together they make one message that lands">
+        <style>
+          .b2aT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .b2aI { font: 700 14px Inter, sans-serif; fill: #1E293B; }
+          .b2aX { font: 400 12px Inter, sans-serif; fill: #FFFFFF; }
+          .b2aXi { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .b2aN { font: 600 14px Inter, sans-serif; fill: #7A4A06; }
+          .b2aBr { stroke: #64748B; stroke-width: 1.5; fill: none; }
+        </style>
+        <rect x="30" y="34" width="300" height="34" rx="8" fill="#8E1246"/>
+        <text class="b2aT" x="46" y="56">1 · Specific ICP (who exactly)</text>
+        <rect x="30" y="76" width="300" height="34" rx="8" fill="#C2185B"/>
+        <text class="b2aT" x="46" y="98">2 · Job to be done (their goal)</text>
+        <rect x="30" y="118" width="300" height="34" rx="8" fill="#E24A85"/>
+        <text class="b2aT" x="46" y="140">3 · Value you create</text>
+        <rect x="30" y="160" width="300" height="34" rx="8" fill="#F4A9C7"/>
+        <text class="b2aI" x="46" y="182">4 · Proof (why believe you)</text>
+        <rect x="30" y="202" width="300" height="34" rx="8" fill="#FCE7F0" stroke="#F4A9C7"/>
+        <text class="b2aI" x="46" y="224">5 · Clear offer + CTA</text>
+        <path class="b2aBr" d="M346 40 q14 0 14 14 v88 q0 14 14 14 q-14 0 -14 14 v88 q0 14 -14 14"/>
+        <text class="b2aI" x="392" y="128">= one message</text>
+        <text class="b2aXi" x="392" y="148">that lands with</text>
+        <text class="b2aXi" x="392" y="166">a real person</text>
+        <rect x="600" y="120" width="255" height="70" rx="12" fill="#FEF3D6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="b2aI" x="620" y="148">AI drafts ingredients 2-5.</text>
+        <text class="b2aXi" x="620" y="170">You choose ingredient 1 - the target.</text>
+        <rect x="30" y="230" width="0" height="0"/>
+      </svg>
+      <figcaption>🔍 Click to zoom - five ingredients stack into one message; you own the target, AI drafts the rest</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>ICP and job-to-be-done - the two you must not outsource<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>AI will happily write for "everyone". That is the failure mode. Your judgement picks the <strong>ICP</strong> (the specific person whose problem you solve best) and the <strong>job to be done</strong> (what they are hiring your product to accomplish). Get those two right and the value, proof, and offer almost write themselves.</p>
+        <ul>
+          <li><strong>ICP is a person, not a demographic.</strong> "Consultants in back-to-back client calls" beats "professionals aged 25-45".</li>
+          <li><strong>Job-to-be-done is their goal, not your feature.</strong> "Never lose a decision between meetings" beats "automatic transcription".</li>
+          <li><strong>Cadence has two ICPs, two motions.</strong> The solo professional (self-serve, B2C-style) and the team lead who buys for a group (B2B). Same product, two messages - and this session builds both.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now - pressure-test a target</span>Here is a rough audience: [your ICP]. Ask me five sharp questions that would tell us whether this is a specific, reachable ICP or a vague "everyone". Then suggest a tighter version.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The rewrite that 3x'd reply rates.</strong> A team's outbound said "we help businesses work smarter". Reframed to one ICP and one job - "we help consultancies stop losing billable decisions in back-to-back calls" - the same product, same channel, tripled replies. Nothing changed but the target. That is positioning doing the heavy lifting AI cannot.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Value, proof, offer - where AI earns its keep<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Once the target is set, AI is genuinely great at drafting the rest - fast, in volume, in your voice:</p>
+        <table class="clean">
+          <thead><tr><th>Ingredient</th><th>What good looks like</th></tr></thead>
+          <tbody>
+            <tr><td>Value</td><td>The outcome in their words ("walk out of every meeting with decisions captured")</td></tr>
+            <tr><td>Proof</td><td>Real evidence you supply - a number, a customer, a demo. Never invented.</td></tr>
+            <tr><td>Offer</td><td>The concrete next step: free solo plan, book a team demo, start a trial.</td></tr>
+          </tbody>
+        </table>
+        <p>Rail one lives here: the proof must be real. AI drafts the sentence; you supply and verify the evidence.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ INTERACTIVE: THE SIMULATOR ============ -->
+  <section class="section" id="simulator">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the message-market-fit simulator</span>
+      <h2>Drive it yourself: watch the message land <span class="tag demo">★ 8 min · everyone plays</span></h2>
+    </div>
+    <p class="lede">Here is the whole lesson in one control panel. The AI is drafting Cadence's positioning message. Every lever you turn on sharpens it - define the ICP, add the pain and proof, clarify the offer, fit the channel, apply the brand voice. Watch message-market fit climb and flip to the scorecard to see how many of the three audience segments actually resonate. Notice what never moves the needle: a bigger model.</p>
+
+    <div id="marketing-live"></div>
+
+    <div class="callout tip">
+      <strong>What the simulator is teaching</strong>
+      Start with everything off: the draft is generic "we help everyone" slop that reaches no one. Define the ICP and it suddenly speaks to a person. Add pain, offer, channel, and voice and it becomes a message you would ship - and all three segments light up. Sharpening did that, not a fancier model.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Build Cadence's positioning - both motions <span class="tag demo">★ 12 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Now do it for real, in your chat tool, for both Cadence audiences. This is the positioning you will carry into every later session.</p>
+
+    <div class="steps">
+      <div class="step"><p>Give the AI the five-ingredient frame and Cadence's real facts (from b1's brief). Ask it to draft positioning for the <strong>solo professional</strong> first.</p></div>
+      <div class="step"><p>Then ask for the <strong>team lead (B2B)</strong> version - same product, different job (managing a team's decisions, not just their own). Notice how value and offer shift.</p></div>
+      <div class="step"><p>Add the guardrail: "use only the proof I gave you; mark any claim you cannot support with [need source]". Keep it honest (rail one).</p></div>
+      <div class="step"><p>Pressure-test each with the simulator's lens: is the ICP specific, the pain real, the offer clear? Tighten until both would score high.</p></div>
+      <div class="step"><p>Save both as your Cadence positioning doc. b3-b9 all pull from it.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The positioning prompt</span>Draft positioning for Cadence (AI note-taker) using this frame, for the audience below.
+Facts (use ONLY these): notes + decisions + action items drafted the moment a call ends;
+free solo plan; paid Teams plan with shared workspaces.
+
+Audience: [Solo professional in back-to-back meetings] then repeat for [Team lead buying for a group].
+Return: (1) one-sentence ICP, (2) the job to be done, (3) value in their words,
+(4) proof - use only the facts above, (5) a clear offer + CTA.
+Mark any claim I did not give you as [need source]. Keep it plain and specific, no hype.</div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Three variants, one clear winner <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">AI's real superpower in positioning is cheap variety. Generate options, then judge them with the message-market-fit lens instead of by gut.</p>
+
+    <div class="steps">
+      <div class="step"><p>Ask for three distinct positioning angles for the solo motion - e.g. speed, never-lose-a-decision, and look-prepared. Same facts, different emphasis.</p></div>
+      <div class="step"><p>Score each against the simulator's levers: which has the sharpest ICP, clearest pain, most concrete offer? Rank them.</p></div>
+      <div class="step"><p>Have the AI combine the strongest ICP + pain + offer into one refined message, then edit it into your brand voice.</p></div>
+      <div class="step"><p>Write one sentence on WHY the winner won. That reasoning is what you will reuse to judge content, ads, and emails later.</p></div>
+    </div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>Variety is the point.</strong> A PMM used to labour over one positioning statement for days. Now they generate ten in minutes and spend the saved time on the judgement that matters - which target, which job, which proof. The work moved from writing to deciding. That is AI leverage done right.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both Cadence positioning motions and save them as your reference doc for the rest of the track.</li>
+      <li>Play the simulator again and predict the fit score before each toggle - predicting it means you understand what drives resonance.</li>
+      <li>Run the positioning prompt on your own product or one you admire. Bring the sharpest ICP you land on to b3.</li>
+      <li>Rewrite one piece of your current copy that talks to "everyone" so it talks to one person. Note what changed.</li>
+      <li>Optional: draft a one-line brand-voice rule (e.g. "warm, plain, never hypey") - b3 uses it constantly.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI-marketing curricula. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Harvard DCE - AI segmentation &amp; personalization</span><span class="note">Part 1 · ICP and audience definition with AI</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">CXL - positioning &amp; messaging for AI go-to-market</span><span class="note">Part 1 + demos · the five-ingredient message</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">2026 AI-marketing guides - message testing</span><span class="note">Demo 2 · generate-and-judge variants</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In the simulator, what makes the message finally resonate with all three segments?</p>
+      <button class="qopt" type="button">A · A newer, bigger model</button>
+      <button class="qopt" type="button">B · Longer copy</button>
+      <button class="qopt" type="button">C · Sharpening the ICP, pain, offer, and channel</button>
+      <p class="qwhy">Fit comes from sharpening the message, not from model size. A message aimed at everyone reaches no one.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · Which two positioning ingredients should you never outsource to AI?</p>
+      <button class="qopt" type="button">A · The wording and the length</button>
+      <button class="qopt" type="button">B · The ICP (who exactly) and the job to be done</button>
+      <button class="qopt" type="button">C · The colour and the font</button>
+      <p class="qwhy">AI drafts value, proof, and offer well - but you must choose the specific target and the job. Those decisions are the leverage.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is AI's real superpower in positioning?</p>
+      <button class="qopt" type="button">A · Cheap variety - generate many options so you can judge and choose the best</button>
+      <button class="qopt" type="button">B · Deciding your strategy for you</button>
+      <button class="qopt" type="button">C · Inventing statistics to support the message</button>
+      <p class="qwhy">AI makes options nearly free, moving your work from writing to deciding. It never invents proof - that is rail one.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Builder session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The 5 ingredients</b><span>specific ICP → job to be done → value → proof → clear offer. Together = one message that lands.</span></div>
+      <div class="cheat-item"><b>Own the target</b><span>you choose the ICP and the job; AI drafts value, proof, and offer. Never outsource the target.</span></div>
+      <div class="cheat-item"><b>Everyone = no one</b><span>a message aimed at everyone reaches no one. The simulator proves it: no ICP, no resonance.</span></div>
+      <div class="cheat-item"><b>Fit beats model size</b><span>message-market fit climbs by sharpening, not by a bigger model. Levers move the score.</span></div>
+      <div class="cheat-item"><b>AI's superpower</b><span>cheap variety - generate many, judge with the fit lens, combine the best, edit to voice.</span></div>
+      <div class="cheat-item"><b>Cadence has two ICPs</b><span>solo professional (self-serve) + team lead (B2B). Same product, two messages - build both.</span></div>
+      <div class="cheat-item"><b>Rail one lives here</b><span>proof must be real. AI drafts the sentence; you supply and verify the evidence.</span></div>
+      <div class="cheat-item"><b>Next session</b><span>b3 - the content engine: turn this positioning into on-brand long-form at speed.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Builder session 2 of 10 · learn-ai-marketing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b1-ai-foundations-marketers.html">← Previous: AI foundations for marketers</a> &nbsp;·&nbsp; <a href="b3-content-engine.html">Next: The content engine →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/marketing-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
