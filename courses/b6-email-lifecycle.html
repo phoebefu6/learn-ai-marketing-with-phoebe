@@ -161,7 +161,43 @@
       <summary><span class="mode live">Live</span>Segment by stage and persona, personalize with consent<span class="mini">3 min</span><span class="caret">▶</span></summary>
       <div class="body">
         <p>Good segmentation is about relevance, not data hoarding. Split by where someone is (stage), what they have done (behavior), and who they are (persona: solo user vs team admin). Then tailor the message - and use only consented first-party data to do it.</p>
-        <table class="clean">
+        
+<figure class="zoomable">
+  <svg viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four small-multiples cards showing how Cadence segments lifecycle email by stage: a new signup with no meeting yet, an active solo user who has not upgraded, a team admin evaluating Teams, and a user who was active and has gone quiet, each paired with its message angle.">
+    <style>
+      .b6smT { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+      .b6smH { font: 700 11px Inter, sans-serif; fill: #1E293B; }
+      .b6smF { font: 400 10.5px Inter, sans-serif; fill: #64748B; }
+      .b6smN { font: 400 12px Inter, sans-serif; fill: #64748B; }
+    </style>
+    <rect x="0" y="0" width="880" height="260" fill="#FFFFFF"/>
+    <text class="b6smT" x="40" y="28">Four segments, four different messages, one product</text>
+
+    <rect x="60" y="50" width="160" height="150" rx="10" fill="#FCE7F0"/>
+    <text class="b6smH" x="140" y="80" text-anchor="middle">New signup (solo)</text>
+    <text class="b6smF" x="140" y="110" text-anchor="middle">Get to first</text>
+    <text class="b6smF" x="140" y="126" text-anchor="middle">note fast</text>
+
+    <rect x="260" y="50" width="160" height="150" rx="10" fill="#FCE7F0"/>
+    <text class="b6smH" x="340" y="80" text-anchor="middle">Active, not upgraded</text>
+    <text class="b6smF" x="340" y="110" text-anchor="middle">Show value for</text>
+    <text class="b6smF" x="340" y="126" text-anchor="middle">a whole team</text>
+
+    <rect x="460" y="50" width="160" height="150" rx="10" fill="#FCE7F0"/>
+    <text class="b6smH" x="540" y="80" text-anchor="middle">Team admin evaluating</text>
+    <text class="b6smF" x="540" y="110" text-anchor="middle">One shared</text>
+    <text class="b6smF" x="540" y="126" text-anchor="middle">source of truth</text>
+
+    <rect x="660" y="50" width="160" height="150" rx="10" fill="#FCE7F0"/>
+    <text class="b6smH" x="740" y="80" text-anchor="middle">Active, now quiet</text>
+    <text class="b6smF" x="740" y="110" text-anchor="middle">Gentle re-engage,</text>
+    <text class="b6smF" x="740" y="126" text-anchor="middle">one reason</text>
+
+    <text class="b6smN" x="40" y="236">Same product, four moments - each message meets the person exactly where they are.</text>
+  </svg>
+  <figcaption>🔍 Click to zoom - the message changes with the stage, not the product</figcaption>
+</figure>
+<table class="clean">
           <thead><tr><th>Segment</th><th>Message angle</th></tr></thead>
           <tbody>
             <tr><td>New signup, no meeting yet (solo)</td><td>Get to your first automatic note fast - here is the one step</td></tr>
@@ -295,6 +331,37 @@ Do not add fake urgency or claims not supported by the email body.</div>
     <div class="callout example">
       <span class="ex-pill">Real world</span>
       <p><strong>The subject line that opened but never converted.</strong> A team picked the highest open-rate subject and celebrated - but it was a curiosity gap that oversold, and almost no one took the next step. When they tied the test to activation instead of opens, a plainer, honest subject won. Match the metric to the goal, not to the ego.</p>
+<figure class="zoomable">
+  <svg viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A quadrant plotting two Cadence subject lines against open rate and whether they lead to activation: a curiosity-gap subject line got more opens but rarely led to the next step, while a plainer, honest subject line opened less but activated more, the version the team kept once they measured against activation instead of opens.">
+    <style>
+      .b6qdA { font: 700 11px Inter, sans-serif; fill: #64748B; letter-spacing: .05em; }
+      .b6qdC { font: 700 12px Inter, sans-serif; fill: #8E1246; }
+      .b6qdI { font: 600 12px Inter, sans-serif; fill: #1E293B; }
+      .b6qdN { font: 400 12px Inter, sans-serif; fill: #64748B; }
+    </style>
+    <rect x="0" y="0" width="880" height="420" fill="#FFFFFF"/>
+    <rect x="90" y="40" width="730" height="300" fill="#FCE7F0" opacity=".35"/>
+    <line x1="455" y1="40" x2="455" y2="340" stroke="#E7EAF0" stroke-width="1.5"/>
+    <line x1="90" y1="190" x2="820" y2="190" stroke="#E7EAF0" stroke-width="1.5"/>
+    <text class="b6qdA" x="455" y="372" text-anchor="middle">OPEN RATE, LOW TO HIGH -&gt;</text>
+    <text class="b6qdA" x="40" y="200" text-anchor="start" transform="rotate(-90 40 200)">ACTIVATION, LOW TO HIGH -&gt;</text>
+
+    <text class="b6qdC" x="104" y="60">LESS OPEN, ACTIVATES</text>
+    <text class="b6qdC" x="806" y="60" text-anchor="end">OPENS + ACTIVATES</text>
+    <text class="b6qdC" x="104" y="330">NEITHER</text>
+    <text class="b6qdC" x="806" y="330" text-anchor="end">OPENS, NOT ACTIVATE</text>
+
+    <circle cx="250" cy="110" r="6" fill="#8E1246"/>
+    <text class="b6qdI" x="262" y="114">Plainer, honest line</text>
+
+    <circle cx="650" cy="270" r="6" fill="#991B1B"/>
+    <text class="b6qdI" x="662" y="274">Curiosity-gap line</text>
+
+    <text class="b6qdN" x="90" y="396">Match the metric to the goal, not the ego - open rate alone can pick the wrong winner.</text>
+  </svg>
+  <figcaption>🔍 Click to zoom - the plainer subject won once activation was the metric</figcaption>
+</figure>
+
     </div>
   </section>
 
